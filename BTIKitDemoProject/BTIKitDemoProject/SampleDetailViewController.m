@@ -8,6 +8,14 @@
 
 #import "SampleDetailViewController.h"
 
+// Models and other global
+#import "BTIKit.h"
+
+// Sub-controllers
+
+// Views
+
+// Private Constants
 #define kCustomNotification                @"com.briterideas.kCustomNotification"
 
 @interface SampleDetailViewController ()

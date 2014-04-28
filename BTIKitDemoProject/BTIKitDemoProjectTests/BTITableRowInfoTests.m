@@ -99,14 +99,14 @@
 
 - (void)testRowSelection
 {
-    [[self tableRowInfo] executeRowSelectionBlock];
+    [[self tableRowInfo] safelyPerformRowSelectionBlock];
     
     XCTAssertTrue([self isBlockExecuted], @"Block was not executed");
 }
 
 - (void)testRowAccessorySelection
 {
-    [[self tableRowInfo] executeRowAccessorySelectionBlock];
+    [[self tableRowInfo] safelyPerformRowAccessorySelectionBlock];
     
     XCTAssertTrue([self isBlockExecuted], @"Block was not executed");
 }

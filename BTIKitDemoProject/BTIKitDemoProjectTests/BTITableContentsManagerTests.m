@@ -32,18 +32,18 @@
     for (NSInteger sectionIndex = 0; sectionIndex < kNumberOfSections; sectionIndex++)
     {
         BTITableSectionInfo *section = [contentsManager dequeueReusableSectionInfoAndAddToContents];
-        [section setIdentifier:[NSString stringWithFormat:@"Section %d Identifier", sectionIndex]];
-        [section setRepresentedObject:[NSString stringWithFormat:@"Section %d", sectionIndex]];
-        [section setHeaderTitle:[NSString stringWithFormat:@"Section %d Header", sectionIndex]];
-        [section setFooterTitle:[NSString stringWithFormat:@"Section %d Footer", sectionIndex]];
-        [section setSectionIndexTitle:[NSString stringWithFormat:@"%d", sectionIndex]];
+        [section setIdentifier:[NSString stringWithFormat:@"Section %ld Identifier", (long)sectionIndex]];
+        [section setRepresentedObject:[NSString stringWithFormat:@"Section %ld", (long)sectionIndex]];
+        [section setHeaderTitle:[NSString stringWithFormat:@"Section %ld Header", (long)sectionIndex]];
+        [section setFooterTitle:[NSString stringWithFormat:@"Section %ld Footer", (long)sectionIndex]];
+        [section setSectionIndexTitle:[NSString stringWithFormat:@"%ld", (long)sectionIndex]];
         
         for (NSInteger rowIndex = 0; rowIndex < sectionIndex + 1; rowIndex++)
         {
             BTITableRowInfo *rowInfo = [contentsManager dequeueReusableRowInfo];
             [section addRowsObject:rowInfo];
             
-            NSString *location = [NSString stringWithFormat:@"Section %d Row %d", sectionIndex, rowIndex];
+            NSString *location = [NSString stringWithFormat:@"Section %ld Row %ld", (long)sectionIndex, (long)rowIndex];
             
             [rowInfo setIdentifier:[location stringByAppendingString:@" Identifier"]];
             [rowInfo setText:[location stringByAppendingString:@" Text"]];
@@ -55,7 +55,6 @@
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 

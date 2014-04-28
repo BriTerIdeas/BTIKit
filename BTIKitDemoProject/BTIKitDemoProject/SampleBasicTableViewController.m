@@ -8,6 +8,15 @@
 
 #import "SampleBasicTableViewController.h"
 
+// Models and other global
+#import "BTIKit.h"
+
+// Sub-controllers
+
+// Views
+
+// Private Constants
+
 @interface SampleBasicTableViewController ()
 
 //Private Properties
@@ -115,7 +124,7 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %d\n", index]
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *visible* notification"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
@@ -132,7 +141,7 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %d\n", index]
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *lifetime* notification"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"

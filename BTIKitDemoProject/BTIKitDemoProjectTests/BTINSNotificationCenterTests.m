@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "NSNotificationCenter+BTIAdditions.h"
+#import "NSNotificationCenter+BTIKitAdditions.h"
 
 #define kMainThreadTestNotification     @"com.briterideas.mainThreadTestNotification"
 
@@ -43,6 +43,19 @@
                                                   object:nil];
 }
 
+#pragma mark - Asynchronous Test Handling
+// http://mentalfaculty.tumblr.com/post/83814421929/unit-testing-asynchronous-cocoa
+
+- (void)waitForAsynchronousTask
+{
+    CFRunLoopRun();
+}
+
+- (void)completeAsynchronousTask
+{
+    CFRunLoopStop(CFRunLoopGetCurrent());
+}
+
 - (void)testThatNotificationsArePostedOnMainThreadFromMainThread
 {
     [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:kMainThreadTestNotification];
@@ -59,13 +72,8 @@
 
     });
     
-    // http://dadabeatnik.wordpress.com/2013/09/12/xcode-and-asynchronous-unit-testing/
-    while (![self isNotificationReceived])
-    {
-        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                                 beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
-    }
-    
+    [self waitForAsynchronousTask];
+        
     XCTAssertTrue([self isNotificationReceived], @"Notification should have been received");
     XCTAssertTrue([self isNotificationPostedOnMainThread], @"Notification should have been received on main thread");
 }
@@ -76,6 +84,8 @@
 {
     [self setNotificationPostedOnMainThread:[NSThread isMainThread]];
     [self setNotificationReceived:YES];
+    
+    [self completeAsynchronousTask];
 }
 
 @end

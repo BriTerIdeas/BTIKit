@@ -8,6 +8,8 @@
 
 #import "BTIAppDelegate.h"
 
+#import "BTIKit.h"
+
 #import "SamplePlainViewController.h"
 #import "SampleBasicTableViewController.h"
 #import "SampleAdvancedTableViewController.h"

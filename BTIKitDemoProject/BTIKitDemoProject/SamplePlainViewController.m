@@ -8,7 +8,15 @@
 
 #import "SamplePlainViewController.h"
 
+// Models and other global
+#import "BTIKit.h"
+
+// Sub-controllers
 #import "SampleDetailViewController.h"
+
+// Views
+
+// Private Constants
 
 @interface SamplePlainViewController ()
 
@@ -48,6 +56,16 @@
 
 #pragma mark - UIViewController Overrides
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    [super viewWillAppear:animated];
+    
+    NSLog(@"This log will appear in Debug and Debug_and_Tracking. If it shows up in Release, something is wrong");
+
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+}
 
 #pragma mark - BTIViewController Overrides
 
@@ -77,7 +95,7 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %d\n", index]
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *visible* notification"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
@@ -94,7 +112,7 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %d\n", index]
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *lifetime* notification"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"

@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		361EE9F018F6F65100ED8FE8 /* SampleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EE9EE18F6F65100ED8FE8 /* SampleDetailViewController.m */; };
 		361EE9F118F6F65100ED8FE8 /* SampleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361EE9EF18F6F65100ED8FE8 /* SampleDetailViewController.xib */; };
-		362F9D4A18F87BA00093C55F /* NSFileManager+BTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9D4918F87BA00093C55F /* NSFileManager+BTIAdditions.m */; };
-		362F9D4D18F87E980093C55F /* NSString+BTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9D4C18F87E980093C55F /* NSString+BTIAdditions.m */; };
+		362F9D4A18F87BA00093C55F /* NSFileManager+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9D4918F87BA00093C55F /* NSFileManager+BTIKitAdditions.m */; };
+		362F9D4D18F87E980093C55F /* NSString+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9D4C18F87E980093C55F /* NSString+BTIKitAdditions.m */; };
 		363F8DFD18EC66E000AA9218 /* BTINSNotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8DFC18EC66E000AA9218 /* BTINSNotificationCenterTests.m */; };
 		363F8E0018ECABD600AA9218 /* BTINotificationInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8DFF18ECABD600AA9218 /* BTINotificationInfoTests.m */; };
 		363F8E0218ECEB6200AA9218 /* BTITableSectionInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8E0118ECEB6200AA9218 /* BTITableSectionInfoTests.m */; };
@@ -50,14 +50,14 @@
 		369A47C418EB194200FF975B /* BTITableContentsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A47C318EB194200FF975B /* BTITableContentsManager.m */; };
 		369A47C718EB571100FF975B /* BTITableRowInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A47C618EB571100FF975B /* BTITableRowInfoTests.m */; };
 		369A47D918EB846E00FF975B /* BTINSMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A47D818EB846E00FF975B /* BTINSMutableArrayTests.m */; };
-		36A0E96E18EF482000907AA1 /* UITableViewCell+BTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E96D18EF482000907AA1 /* UITableViewCell+BTIAdditions.m */; };
+		36A0E96E18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0E96D18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m */; };
 		36AF51D318EF57E3002C8C80 /* BTIUITableViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AF51D218EF57E3002C8C80 /* BTIUITableViewCellTests.m */; };
-		36CAEE5318EA4B38004903BA /* NSMutableArray+BTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5218EA4B38004903BA /* NSMutableArray+BTIAdditions.m */; };
+		36CAEE5318EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5218EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m */; };
 		36CAEE5618EA4C5C004903BA /* BTITableSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5518EA4C5C004903BA /* BTITableSectionInfo.m */; };
 		36CAEE5918EA4FE5004903BA /* BTITableRowInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5818EA4FE5004903BA /* BTITableRowInfo.m */; };
-		36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIAdditions.m */; };
-		36CAEE6118EA5295004903BA /* UIDevice+BTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5D18EA5295004903BA /* UIDevice+BTIAdditions.m */; };
-		36CAEE6218EA5295004903BA /* UITableView+BTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5F18EA5295004903BA /* UITableView+BTIAdditions.m */; };
+		36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m */; };
+		36CAEE6118EA5295004903BA /* UIDevice+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5D18EA5295004903BA /* UIDevice+BTIKitAdditions.m */; };
+		36CAEE6218EA5295004903BA /* UITableView+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5F18EA5295004903BA /* UITableView+BTIKitAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +74,10 @@
 		361EE9ED18F6F65100ED8FE8 /* SampleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleDetailViewController.h; sourceTree = "<group>"; };
 		361EE9EE18F6F65100ED8FE8 /* SampleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleDetailViewController.m; sourceTree = "<group>"; };
 		361EE9EF18F6F65100ED8FE8 /* SampleDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleDetailViewController.xib; sourceTree = "<group>"; };
-		362F9D4818F87BA00093C55F /* NSFileManager+BTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+BTIAdditions.h"; sourceTree = "<group>"; };
-		362F9D4918F87BA00093C55F /* NSFileManager+BTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+BTIAdditions.m"; sourceTree = "<group>"; };
-		362F9D4B18F87E980093C55F /* NSString+BTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BTIAdditions.h"; sourceTree = "<group>"; };
-		362F9D4C18F87E980093C55F /* NSString+BTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BTIAdditions.m"; sourceTree = "<group>"; };
+		362F9D4818F87BA00093C55F /* NSFileManager+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		362F9D4918F87BA00093C55F /* NSFileManager+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		362F9D4B18F87E980093C55F /* NSString+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		362F9D4C18F87E980093C55F /* NSString+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BTIKitAdditions.m"; sourceTree = "<group>"; };
 		363F8DFC18EC66E000AA9218 /* BTINSNotificationCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINSNotificationCenterTests.m; sourceTree = "<group>"; };
 		363F8DFF18ECABD600AA9218 /* BTINotificationInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINotificationInfoTests.m; sourceTree = "<group>"; };
 		363F8E0118ECEB6200AA9218 /* BTITableSectionInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableSectionInfoTests.m; sourceTree = "<group>"; };
@@ -131,21 +131,21 @@
 		369A47C318EB194200FF975B /* BTITableContentsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableContentsManager.m; sourceTree = "<group>"; };
 		369A47C618EB571100FF975B /* BTITableRowInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableRowInfoTests.m; sourceTree = "<group>"; };
 		369A47D818EB846E00FF975B /* BTINSMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINSMutableArrayTests.m; sourceTree = "<group>"; };
-		36A0E96C18EF482000907AA1 /* UITableViewCell+BTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BTIAdditions.h"; sourceTree = "<group>"; };
-		36A0E96D18EF482000907AA1 /* UITableViewCell+BTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BTIAdditions.m"; sourceTree = "<group>"; };
+		36A0E96C18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		36A0E96D18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BTIKitAdditions.m"; sourceTree = "<group>"; };
 		36AF51D218EF57E3002C8C80 /* BTIUITableViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIUITableViewCellTests.m; sourceTree = "<group>"; };
-		36CAEE5118EA4B38004903BA /* NSMutableArray+BTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BTIAdditions.h"; sourceTree = "<group>"; };
-		36CAEE5218EA4B38004903BA /* NSMutableArray+BTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BTIAdditions.m"; sourceTree = "<group>"; };
+		36CAEE5118EA4B38004903BA /* NSMutableArray+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		36CAEE5218EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BTIKitAdditions.m"; sourceTree = "<group>"; };
 		36CAEE5418EA4C5C004903BA /* BTITableSectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTITableSectionInfo.h; sourceTree = "<group>"; };
 		36CAEE5518EA4C5C004903BA /* BTITableSectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableSectionInfo.m; sourceTree = "<group>"; };
 		36CAEE5718EA4FE5004903BA /* BTITableRowInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTITableRowInfo.h; sourceTree = "<group>"; };
 		36CAEE5818EA4FE5004903BA /* BTITableRowInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableRowInfo.m; sourceTree = "<group>"; };
-		36CAEE5A18EA5295004903BA /* NSNotificationCenter+BTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+BTIAdditions.h"; sourceTree = "<group>"; };
-		36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+BTIAdditions.m"; sourceTree = "<group>"; };
-		36CAEE5C18EA5295004903BA /* UIDevice+BTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+BTIAdditions.h"; sourceTree = "<group>"; };
-		36CAEE5D18EA5295004903BA /* UIDevice+BTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+BTIAdditions.m"; sourceTree = "<group>"; };
-		36CAEE5E18EA5295004903BA /* UITableView+BTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+BTIAdditions.h"; sourceTree = "<group>"; };
-		36CAEE5F18EA5295004903BA /* UITableView+BTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+BTIAdditions.m"; sourceTree = "<group>"; };
+		36CAEE5A18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		36CAEE5C18EA5295004903BA /* UIDevice+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		36CAEE5D18EA5295004903BA /* UIDevice+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		36CAEE5E18EA5295004903BA /* UITableView+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		36CAEE5F18EA5295004903BA /* UITableView+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+BTIKitAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,20 +322,20 @@
 		366E0DB018E9E9680006B900 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				362F9D4818F87BA00093C55F /* NSFileManager+BTIAdditions.h */,
-				362F9D4918F87BA00093C55F /* NSFileManager+BTIAdditions.m */,
-				36CAEE5118EA4B38004903BA /* NSMutableArray+BTIAdditions.h */,
-				36CAEE5218EA4B38004903BA /* NSMutableArray+BTIAdditions.m */,
-				36CAEE5A18EA5295004903BA /* NSNotificationCenter+BTIAdditions.h */,
-				36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIAdditions.m */,
-				362F9D4B18F87E980093C55F /* NSString+BTIAdditions.h */,
-				362F9D4C18F87E980093C55F /* NSString+BTIAdditions.m */,
-				36CAEE5C18EA5295004903BA /* UIDevice+BTIAdditions.h */,
-				36CAEE5D18EA5295004903BA /* UIDevice+BTIAdditions.m */,
-				36CAEE5E18EA5295004903BA /* UITableView+BTIAdditions.h */,
-				36CAEE5F18EA5295004903BA /* UITableView+BTIAdditions.m */,
-				36A0E96C18EF482000907AA1 /* UITableViewCell+BTIAdditions.h */,
-				36A0E96D18EF482000907AA1 /* UITableViewCell+BTIAdditions.m */,
+				362F9D4818F87BA00093C55F /* NSFileManager+BTIKitAdditions.h */,
+				362F9D4918F87BA00093C55F /* NSFileManager+BTIKitAdditions.m */,
+				36CAEE5118EA4B38004903BA /* NSMutableArray+BTIKitAdditions.h */,
+				36CAEE5218EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m */,
+				36CAEE5A18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.h */,
+				36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m */,
+				362F9D4B18F87E980093C55F /* NSString+BTIKitAdditions.h */,
+				362F9D4C18F87E980093C55F /* NSString+BTIKitAdditions.m */,
+				36CAEE5C18EA5295004903BA /* UIDevice+BTIKitAdditions.h */,
+				36CAEE5D18EA5295004903BA /* UIDevice+BTIKitAdditions.m */,
+				36CAEE5E18EA5295004903BA /* UITableView+BTIKitAdditions.h */,
+				36CAEE5F18EA5295004903BA /* UITableView+BTIKitAdditions.m */,
+				36A0E96C18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.h */,
+				36A0E96D18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -497,18 +497,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIAdditions.m in Sources */,
+				36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m in Sources */,
 				36CAEE5618EA4C5C004903BA /* BTITableSectionInfo.m in Sources */,
-				36CAEE6118EA5295004903BA /* UIDevice+BTIAdditions.m in Sources */,
+				36CAEE6118EA5295004903BA /* UIDevice+BTIKitAdditions.m in Sources */,
 				361EE9F018F6F65100ED8FE8 /* SampleDetailViewController.m in Sources */,
-				36A0E96E18EF482000907AA1 /* UITableViewCell+BTIAdditions.m in Sources */,
-				36CAEE6218EA5295004903BA /* UITableView+BTIAdditions.m in Sources */,
+				36A0E96E18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m in Sources */,
+				36CAEE6218EA5295004903BA /* UITableView+BTIKitAdditions.m in Sources */,
 				366E0DBD18E9ED990006B900 /* BTINotificationInfo.m in Sources */,
 				36CAEE5918EA4FE5004903BA /* BTITableRowInfo.m in Sources */,
 				366E0DBA18E9EB260006B900 /* BTIObject.m in Sources */,
 				363F8E0E18EDE03B00AA9218 /* BTITableViewController.m in Sources */,
 				363F8E1B18EDF2B200AA9218 /* SamplePlainViewController.m in Sources */,
-				362F9D4D18F87E980093C55F /* NSString+BTIAdditions.m in Sources */,
+				362F9D4D18F87E980093C55F /* NSString+BTIKitAdditions.m in Sources */,
 				369A47C418EB194200FF975B /* BTITableContentsManager.m in Sources */,
 				366E0DC018EA0AC20006B900 /* BTIViewController.m in Sources */,
 				366E0D8818E9E93C0006B900 /* BTIAppDelegate.m in Sources */,
@@ -517,10 +517,10 @@
 				363F8E1218EDEC3100AA9218 /* BTIArrayTableViewController.m in Sources */,
 				36544ED718F32E1E00B9B7A2 /* SampleTableViewCell1.m in Sources */,
 				363F8E2318EDF37500AA9218 /* SampleBasicTableViewController.m in Sources */,
-				362F9D4A18F87BA00093C55F /* NSFileManager+BTIAdditions.m in Sources */,
+				362F9D4A18F87BA00093C55F /* NSFileManager+BTIKitAdditions.m in Sources */,
 				366E0D8418E9E93C0006B900 /* main.m in Sources */,
 				366E0DB618E9E97D0006B900 /* BTITableViewCell.m in Sources */,
-				36CAEE5318EA4B38004903BA /* NSMutableArray+BTIAdditions.m in Sources */,
+				36CAEE5318EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +628,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = BTI_KILL_NSLOG_OUTPUT;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -708,6 +709,81 @@
 			};
 			name = Release;
 		};
+		36EC1DE3190B007E0026C813 /* Debug_and_Tracking */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					BTI_TRACKING_ENABLED,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug_and_Tracking;
+		};
+		36EC1DE4190B007E0026C813 /* Debug_and_Tracking */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				INFOPLIST_FILE = "BTIKitDemoProject/BTIKitDemoProject-Info.plist";
+				OTHER_CFLAGS = "-Wdocumentation";
+				PRODUCT_NAME = BTIKitDemoProject;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug_and_Tracking;
+		};
+		36EC1DE5190B007E0026C813 /* Debug_and_Tracking */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTIKitDemoProject.app/BTIKitDemoProject";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BTIKitDemoProjectTests/BTIKitDemoProjectTests-Info.plist";
+				PRODUCT_NAME = BTIKitDemoProjectTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug_and_Tracking;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -715,6 +791,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				366E0DA718E9E93C0006B900 /* Debug */,
+				36EC1DE3190B007E0026C813 /* Debug_and_Tracking */,
 				366E0DA818E9E93C0006B900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -724,6 +801,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				366E0DAA18E9E93C0006B900 /* Debug */,
+				36EC1DE4190B007E0026C813 /* Debug_and_Tracking */,
 				366E0DAB18E9E93C0006B900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -733,6 +811,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				366E0DAD18E9E93C0006B900 /* Debug */,
+				36EC1DE5190B007E0026C813 /* Debug_and_Tracking */,
 				366E0DAE18E9E93C0006B900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

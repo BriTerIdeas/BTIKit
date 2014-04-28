@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "NSMutableArray+BTIAdditions.h"
+#import "NSMutableArray+BTIKitAdditions.h"
 
 @interface BTINSMutableArrayTests : XCTestCase
 

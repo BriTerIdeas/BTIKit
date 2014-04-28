@@ -8,6 +8,15 @@
 
 #import "SampleAdvancedTableViewController.h"
 
+// Models and other global
+#import "BTIKit.h"
+
+// Sub-controllers
+
+// Views
+
+// Private Constants
+
 @interface SampleAdvancedTableViewController ()
 
 //Private Properties
@@ -222,7 +231,7 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %d\n", index]
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *visible* notification"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
@@ -239,7 +248,7 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %d\n", index]
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *lifetime* notification"
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
@@ -332,7 +341,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     BTITableRowInfo *rowInfo = [self rowInfoInTableView:tableView atIndexPath:indexPath];
 
-    [rowInfo executeRowSelectionBlock];
+    [rowInfo safelyPerformRowSelectionBlock];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -344,7 +353,7 @@ accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
         
     BTITableRowInfo *rowInfo = [self rowInfoInTableView:tableView atIndexPath:indexPath];
     
-    [rowInfo executeRowAccessorySelectionBlock];
+    [rowInfo safelyPerformRowAccessorySelectionBlock];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }

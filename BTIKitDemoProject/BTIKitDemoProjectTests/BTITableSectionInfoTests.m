@@ -27,7 +27,6 @@
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
@@ -195,7 +194,7 @@
         BTITableRowInfo *rowInfo = [[BTITableRowInfo alloc] init];
         [sectionInfo addRowsObject:rowInfo];
         
-        NSString *location = [NSString stringWithFormat:@"Row %d", rowIndex];
+        NSString *location = [NSString stringWithFormat:@"Row %ld", (long)rowIndex];
         
         [rowInfo setIdentifier:[location stringByAppendingString:@" Identifier"]];
         [rowInfo setText:[location stringByAppendingString:@" Text"]];
