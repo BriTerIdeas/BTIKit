@@ -7,15 +7,15 @@
 //
 
 // Libraries
-#import <UIKit/UIKit.h>
 
 // Forward Declarations and Classes
+#import "BTITableViewCell.h"
 
 // Public Constants
 
 // Protocols
 
-@interface SampleTableViewCell1 : UITableViewCell
+@interface SampleTableViewCell1 : BTITableViewCell
 
 // Public Properties
 @property (nonatomic, strong) IBOutlet UILabel *verificationLabel;

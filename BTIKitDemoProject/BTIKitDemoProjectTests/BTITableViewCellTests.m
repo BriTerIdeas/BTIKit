@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 
 #import "BTITableViewCell.h"
+#import "SampleTableViewCell1.h"
 
 @interface BTITableViewCellTests : XCTestCase
 
@@ -19,18 +20,39 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
 - (void)testReuseIdentifier
 {
     XCTAssertEqualObjects(@"BTITableViewCell", [BTITableViewCell reuseIdentifierBTI], @"Reuse identifier is wrong");
+}
+
+- (void)testRegisterNib
+{
+    UITableView *tableView = [[UITableView alloc] init];
+    
+    [SampleTableViewCell1 registerNibForTableViewBTI:tableView];
+    
+    SampleTableViewCell1 *cell = [tableView dequeueReusableCellWithIdentifier:[SampleTableViewCell1 reuseIdentifierBTI]];
+    
+    XCTAssertNotNil(cell, @"Should have created a cell");
+}
+
+- (void)testDequeueCell
+{
+    UITableView *tableView = [[UITableView alloc] init];
+
+    UINib *nib = [UINib nibWithNibName:NSStringFromClass([SampleTableViewCell1 class]) bundle:nil];
+    [tableView registerNib:nib forCellReuseIdentifier:[SampleTableViewCell1 reuseIdentifierBTI]];
+    
+    SampleTableViewCell1 *cell = [SampleTableViewCell1 dequeueCellFromTableViewBTI:tableView];
+    
+    XCTAssertNotNil(cell, @"Should have created a cell");
 }
 
 @end

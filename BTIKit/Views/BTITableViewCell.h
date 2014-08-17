@@ -1,6 +1,7 @@
 //
 //  BTITableViewCell.h
 //  BTIKit
+//  v1.1
 //
 //  Created by Brian Slick in March 2014
 //  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.
@@ -38,5 +39,19 @@
  @return The class name as a string
  */
 + (NSString *)reuseIdentifierBTI;
+
+/**
+ Creates and registers a UINib object matching the class name with the provided table view
+ 
+ @param tableView The UITableView object with which to register the Nib
+ */
++ (void)registerNibForTableViewBTI:(UITableView *)tableView;
+
+/**
+ Dequeues a reusable cell of receiver's class type from the provided table view, or nil if no nib is registered.
+ 
+ @param tableView the UITableView object from which to dequeue a cell.
+ */
++ (instancetype)dequeueCellFromTableViewBTI:(UITableView *)tableView;
 
 @end

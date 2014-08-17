@@ -1,6 +1,7 @@
 //
 //  NSFileManager+BTIKitAdditions.m
 //  BTIKit
+//  v1.1
 //
 //  Created by Brian Slick in March 2014
 //  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.
@@ -8,6 +9,8 @@
 //
 
 #import "NSFileManager+BTIKitAdditions.h"
+
+#import "BTIKit.h"
 
 @implementation NSFileManager (BTIKitAdditions)
 
@@ -84,6 +87,14 @@
     
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
     return isCreateSuccessful;
+}
+
+- (BOOL)fileExistsAtFileURLBTI:(NSURL *)url
+{
+    //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+    return [self fileExistsAtPath:[url path]];
 }
 
 - (BOOL)removeItemAtPathBTI:(NSString *)path

@@ -13,6 +13,7 @@
 
 // Sub-controllers
 #import "SampleDetailViewController.h"
+#import "SampleWebViewController.h"
 
 // Views
 
@@ -61,6 +62,8 @@
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
 
     [super viewWillAppear:animated];
+    
+    [self setBackBarButtonTitleBTI:@"Bork"];
     
     NSLog(@"This log will appear in Debug and Debug_and_Tracking. If it shows up in Release, something is wrong");
 
@@ -151,6 +154,17 @@
     SampleDetailViewController *detailViewController = [[SampleDetailViewController alloc] init];
     
     [[self navigationController] pushViewController:detailViewController animated:YES];
+    
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+}
+
+- (IBAction)webButtonPressed:(UIButton *)button
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+    
+    SampleWebViewController *webViewController = [[SampleWebViewController alloc] init];
+    
+    [[self navigationController] pushViewController:webViewController animated:YES];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }

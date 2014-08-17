@@ -1,6 +1,7 @@
 //
 //  BTIViewController.m
 //  BTIKit
+//  v1.1
 //
 //  Created by Brian Slick in March 2014
 //  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.
@@ -41,22 +42,24 @@
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-       
-    [super didReceiveMemoryWarning];
-    
-    if ([self isViewLoaded])
-    {
-        if ([[self view] window] == nil)
-        {
-            [self setView:nil];
-        }
-    }
-    
-    //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
-}
+// Discovered an edge case where the unloading caused a problem.
+// Disabling pending further review.
+//- (void)didReceiveMemoryWarning
+//{
+//    //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+//       
+//    [super didReceiveMemoryWarning];
+//    
+//    if ([self isViewLoaded])
+//    {
+//        if ([[self view] window] == nil)
+//        {
+//            [self setView:nil];
+//        }
+//    }
+//    
+//    //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+//}
 
 #pragma mark - Initialization and UI Creation Methods
 

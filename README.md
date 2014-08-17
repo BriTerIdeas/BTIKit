@@ -19,32 +19,51 @@ In summary:
 
 **Categories**
 
-- NSFileManager. Log those errors when you are otherwise too lazy to do so.
-- NSMutableArray. Remove the first object, and move object to new different index.
-- NSNotificationCenter. Make sure notifications are posted on the main thread.
-- NSString. Another error logging one.
-- UIDevice. isIpad, isIphone, isRetina. Woo!
-- UITableView. IndexPath for a view. Not my idea.
-- UITableViewCell. Enclosing table view, nib loading.
+- NSArray: Random object at index.
+- NSFileManager: Log those errors when you are otherwise too lazy to do so.
+- NSMutableArray: Remove the first object, and move object to new different index.
+- NSNotificationCenter: Make sure notifications are posted on the main thread.
+- NSNull: isEmpty. isIncompleteLibraryWithoutNSNullCategory.
+- NSString: Another error logging one. And isEmpty.
+- UICollectionView: IndexPath for a view.
+- UICollectionViewCell: Enclosing collection view, nib loading.
+- UIDevice: isIpad, isIphone, isRetina. Woo!
+- UITableView: IndexPath for a view. Not my idea.
+- UITableViewCell: Enclosing table view, nib loading.
+- UITableViewHeaderFooterView: Nib loading.
+- UIViewController: Back button title.
 
 **Models**
 
-- BTIObject. Mostly empty. Nice -description method, though.
-- BTINotificationInfo. Simplify adding/removing notification observers.
-- BTITableRowInfo. Encapsulate useful stuff for table rows.
-- BTITableSectionInfo. Encapsulate useful stuff for table sections.
-- BTITableContentsManager. Combine rowInfos and sectionInfos to manage your table view.
+- BTIObject: Mostly empty. Nice -description method, though.
+- BTINotificationInfo: Simplify adding/removing notification observers.
+- BTITableRowInfo: Encapsulate useful stuff for table rows.
+- BTITableSectionInfo: Encapsulate useful stuff for table sections.
+- BTITableContentsManager: Combine rowInfos and sectionInfos to manage your table view.
 
 **Views**
 
-- BTITableViewCell. Bend the reuseIdentifier to your will.
+- BTICollectionViewCell: reuseIdentifier. Nib registration. Dequeueing.
+- BTITableViewCell: reuseIdentifier. Nib registration. Dequeueing.
+- BTITableViewHeaderFooterView: reuseIdentifier. Nib registration. Dequeueing.
 
 **View Controllers**
 
-- BTIViewController. Mostly shows how to use the notification helpers.
-- BTITableViewController. Adds a table view.
-- BTIArrayTableViewController. Adds a simple array.
-- BTIManagerTableViewController. Uses a BTITableContentsManager.
+- BTIViewController: Mostly shows how to use the notification helpers. Parent class for all of the following...
+
+Table View Stuff
+- BTITableViewController: Adds a table view.
+- BTIArrayTableViewController: Adds a simple array to BTITableViewController.
+- BTIManagerTableViewController: Uses a BTITableContentsManager with BTITableViewController.
+
+Collection View Stuff
+- BTICollectionViewController: Adds a collection view.
+- BTIArrayCollectionViewController: Adds a simple array to BTICollectionViewController.
+- BTIManagerCollectionViewController: Uses a BTITableContentsManager with BTICollectionViewController.
+
+Web View Stuff
+- BTIWebViewController. Adds a web view.
+
 
 **Bonus**
 

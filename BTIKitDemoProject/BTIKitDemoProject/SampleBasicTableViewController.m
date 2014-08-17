@@ -14,6 +14,8 @@
 // Sub-controllers
 
 // Views
+#import "SampleTableViewCell1.h"
+#import "SampleTableHeaderFooterView.h"
 
 // Private Constants
 
@@ -115,6 +117,20 @@
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 
+#pragma mark - BTITableViewController Overrides
+
+- (void)registerNibsForTableView:(UITableView *)tableView
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    [SampleTableViewCell1 registerNibForTableViewBTI:tableView];
+    
+    SampleTableViewCell1 *cell = [SampleTableViewCell1 dequeueCellFromTableViewBTI:tableView];
+    [tableView setRowHeight:CGRectGetHeight([cell frame])];
+
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+}
+
 #pragma mark - Notification Handlers
 
 - (void)doSomethingForVisibleNotification:(NSNotification *)notification
@@ -179,6 +195,21 @@
 #pragma mark - UITableViewDataSource Methods
 
 // Superclass handles basic cases.  Override the usual methods for customization.
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    SampleTableViewCell1 *cell = [SampleTableViewCell1 dequeueCellFromTableViewBTI:tableView];
+    
+    NSString *text = [self itemInTableView:tableView atIndexPath:indexPath];
+    
+    [[cell verificationLabel] setText:text];
+    
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+    return cell;
+}
 
 #pragma mark - UITableViewDelegate Methods
 

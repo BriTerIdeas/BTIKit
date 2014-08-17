@@ -32,6 +32,30 @@
 		36544ED718F32E1E00B9B7A2 /* SampleTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 36544ED518F32E1E00B9B7A2 /* SampleTableViewCell1.m */; };
 		36544ED918F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */; };
 		36544EDA18F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */; };
+		3655D773199E6810003390D3 /* NSNull+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D772199E6810003390D3 /* NSNull+BTIKitAdditions.m */; };
+		3655D775199E687D003390D3 /* BTINSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D774199E687D003390D3 /* BTINSStringTests.m */; };
+		3655D778199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D777199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m */; };
+		3655D77B199E96E3003390D3 /* UICollectionView+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D77A199E96E3003390D3 /* UICollectionView+BTIKitAdditions.m */; };
+		3655D77E199E9778003390D3 /* UICollectionViewCell+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D77D199E9778003390D3 /* UICollectionViewCell+BTIKitAdditions.m */; };
+		3655D781199E9C9C003390D3 /* BTITableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D780199E9C9C003390D3 /* BTITableViewHeaderFooterView.m */; };
+		3655D784199E9CB1003390D3 /* BTICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D783199E9CB1003390D3 /* BTICollectionViewCell.m */; };
+		3655D789199EDFF3003390D3 /* BTICollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D788199EDFF3003390D3 /* BTICollectionViewController.m */; };
+		3655D78C199EE2E3003390D3 /* BTIArrayCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D78B199EE2E3003390D3 /* BTIArrayCollectionViewController.m */; };
+		3655D78F199EE44C003390D3 /* BTIManagerCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D78E199EE44C003390D3 /* BTIManagerCollectionViewController.m */; };
+		3655D794199EEA73003390D3 /* BTIFileUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D793199EEA73003390D3 /* BTIFileUtilities.m */; };
+		3655D797199EEB48003390D3 /* BTIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D796199EEB48003390D3 /* BTIWebViewController.m */; };
+		3655D79B199FB434003390D3 /* SampleWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D799199FB434003390D3 /* SampleWebViewController.m */; };
+		3655D79C199FB434003390D3 /* SampleWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3655D79A199FB434003390D3 /* SampleWebViewController.xib */; };
+		3655D79F199FB874003390D3 /* NSArray+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D79E199FB874003390D3 /* NSArray+BTIKitAdditions.m */; };
+		3655D7A1199FD383003390D3 /* BTIUITableViewHeaderFooterViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D7A0199FD383003390D3 /* BTIUITableViewHeaderFooterViewTests.m */; };
+		3655D7A4199FD3FA003390D3 /* SampleTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D7A3199FD3FA003390D3 /* SampleTableHeaderFooterView.m */; };
+		3655D7A6199FD40B003390D3 /* SampleTableHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3655D7A5199FD40B003390D3 /* SampleTableHeaderFooterView.xib */; };
+		3655D7A8199FD5E0003390D3 /* BTIUICollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D7A7199FD5E0003390D3 /* BTIUICollectionViewCellTests.m */; };
+		3655D7AB199FD611003390D3 /* SampleCollectionViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D7AA199FD611003390D3 /* SampleCollectionViewCell1.m */; };
+		3655D7AD199FD633003390D3 /* SampleCollectionViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3655D7AC199FD633003390D3 /* SampleCollectionViewCell1.xib */; };
+		3655D7AF199FDB8B003390D3 /* BTICollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D7AE199FDB8B003390D3 /* BTICollectionViewCellTests.m */; };
+		3655D7B1199FDE23003390D3 /* BTITableViewHeaderFooterViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D7B0199FDE23003390D3 /* BTITableViewHeaderFooterViewTests.m */; };
+		3655D7B4199FE260003390D3 /* UIViewController+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D7B3199FE260003390D3 /* UIViewController+BTIKitAdditions.m */; };
 		366E0D7818E9E93C0006B900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E0D7718E9E93C0006B900 /* Foundation.framework */; };
 		366E0D7A18E9E93C0006B900 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E0D7918E9E93C0006B900 /* CoreGraphics.framework */; };
 		366E0D7C18E9E93C0006B900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 366E0D7B18E9E93C0006B900 /* UIKit.framework */; };
@@ -103,6 +127,46 @@
 		36544ED418F32E1E00B9B7A2 /* SampleTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCell1.h; sourceTree = "<group>"; };
 		36544ED518F32E1E00B9B7A2 /* SampleTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCell1.m; sourceTree = "<group>"; };
 		36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell1.xib; sourceTree = "<group>"; };
+		3655D771199E6810003390D3 /* NSNull+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		3655D772199E6810003390D3 /* NSNull+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		3655D774199E687D003390D3 /* BTINSStringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINSStringTests.m; sourceTree = "<group>"; };
+		3655D776199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewHeaderFooterView+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		3655D777199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewHeaderFooterView+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		3655D779199E96E3003390D3 /* UICollectionView+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		3655D77A199E96E3003390D3 /* UICollectionView+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		3655D77C199E9778003390D3 /* UICollectionViewCell+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		3655D77D199E9778003390D3 /* UICollectionViewCell+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		3655D77F199E9C9C003390D3 /* BTITableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTITableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		3655D780199E9C9C003390D3 /* BTITableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		3655D782199E9CB1003390D3 /* BTICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTICollectionViewCell.h; sourceTree = "<group>"; };
+		3655D783199E9CB1003390D3 /* BTICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTICollectionViewCell.m; sourceTree = "<group>"; };
+		3655D787199EDFF3003390D3 /* BTICollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTICollectionViewController.h; sourceTree = "<group>"; };
+		3655D788199EDFF3003390D3 /* BTICollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTICollectionViewController.m; sourceTree = "<group>"; };
+		3655D78A199EE2E3003390D3 /* BTIArrayCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTIArrayCollectionViewController.h; sourceTree = "<group>"; };
+		3655D78B199EE2E3003390D3 /* BTIArrayCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIArrayCollectionViewController.m; sourceTree = "<group>"; };
+		3655D78D199EE44C003390D3 /* BTIManagerCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTIManagerCollectionViewController.h; sourceTree = "<group>"; };
+		3655D78E199EE44C003390D3 /* BTIManagerCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIManagerCollectionViewController.m; sourceTree = "<group>"; };
+		3655D792199EEA73003390D3 /* BTIFileUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTIFileUtilities.h; path = Helpers/BTIFileUtilities.h; sourceTree = "<group>"; };
+		3655D793199EEA73003390D3 /* BTIFileUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTIFileUtilities.m; path = Helpers/BTIFileUtilities.m; sourceTree = "<group>"; };
+		3655D795199EEB48003390D3 /* BTIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTIWebViewController.h; sourceTree = "<group>"; };
+		3655D796199EEB48003390D3 /* BTIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIWebViewController.m; sourceTree = "<group>"; };
+		3655D798199FB434003390D3 /* SampleWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleWebViewController.h; sourceTree = "<group>"; };
+		3655D799199FB434003390D3 /* SampleWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleWebViewController.m; sourceTree = "<group>"; };
+		3655D79A199FB434003390D3 /* SampleWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleWebViewController.xib; sourceTree = "<group>"; };
+		3655D79D199FB874003390D3 /* NSArray+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		3655D79E199FB874003390D3 /* NSArray+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		3655D7A0199FD383003390D3 /* BTIUITableViewHeaderFooterViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIUITableViewHeaderFooterViewTests.m; sourceTree = "<group>"; };
+		3655D7A2199FD3FA003390D3 /* SampleTableHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableHeaderFooterView.h; sourceTree = "<group>"; };
+		3655D7A3199FD3FA003390D3 /* SampleTableHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableHeaderFooterView.m; sourceTree = "<group>"; };
+		3655D7A5199FD40B003390D3 /* SampleTableHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableHeaderFooterView.xib; sourceTree = "<group>"; };
+		3655D7A7199FD5E0003390D3 /* BTIUICollectionViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIUICollectionViewCellTests.m; sourceTree = "<group>"; };
+		3655D7A9199FD611003390D3 /* SampleCollectionViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleCollectionViewCell1.h; sourceTree = "<group>"; };
+		3655D7AA199FD611003390D3 /* SampleCollectionViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleCollectionViewCell1.m; sourceTree = "<group>"; };
+		3655D7AC199FD633003390D3 /* SampleCollectionViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleCollectionViewCell1.xib; sourceTree = "<group>"; };
+		3655D7AE199FDB8B003390D3 /* BTICollectionViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTICollectionViewCellTests.m; sourceTree = "<group>"; };
+		3655D7B0199FDE23003390D3 /* BTITableViewHeaderFooterViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableViewHeaderFooterViewTests.m; sourceTree = "<group>"; };
+		3655D7B2199FE260003390D3 /* UIViewController+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		3655D7B3199FE260003390D3 /* UIViewController+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BTIKitAdditions.m"; sourceTree = "<group>"; };
 		366E0D7418E9E93C0006B900 /* BTIKitDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTIKitDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366E0D7718E9E93C0006B900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		366E0D7918E9E93C0006B900 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -187,6 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				363F8E0618EDD40400AA9218 /* BTITableViewCellTests.m */,
+				3655D7B0199FDE23003390D3 /* BTITableViewHeaderFooterViewTests.m */,
+				3655D7AE199FDB8B003390D3 /* BTICollectionViewCellTests.m */,
 			);
 			name = "View Tests";
 			sourceTree = "<group>";
@@ -206,6 +272,9 @@
 				363F8E2718EDF39900AA9218 /* SampleAdvancedTableViewController.h */,
 				363F8E2818EDF39900AA9218 /* SampleAdvancedTableViewController.m */,
 				363F8E2918EDF39900AA9218 /* SampleAdvancedTableViewController.xib */,
+				3655D798199FB434003390D3 /* SampleWebViewController.h */,
+				3655D799199FB434003390D3 /* SampleWebViewController.m */,
+				3655D79A199FB434003390D3 /* SampleWebViewController.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -224,8 +293,58 @@
 				36544ED418F32E1E00B9B7A2 /* SampleTableViewCell1.h */,
 				36544ED518F32E1E00B9B7A2 /* SampleTableViewCell1.m */,
 				36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */,
+				3655D7A2199FD3FA003390D3 /* SampleTableHeaderFooterView.h */,
+				3655D7A3199FD3FA003390D3 /* SampleTableHeaderFooterView.m */,
+				3655D7A5199FD40B003390D3 /* SampleTableHeaderFooterView.xib */,
+				3655D7A9199FD611003390D3 /* SampleCollectionViewCell1.h */,
+				3655D7AA199FD611003390D3 /* SampleCollectionViewCell1.m */,
+				3655D7AC199FD633003390D3 /* SampleCollectionViewCell1.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		3655D785199EDFBA003390D3 /* Table View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				363F8E0C18EDE03B00AA9218 /* BTITableViewController.h */,
+				363F8E0D18EDE03B00AA9218 /* BTITableViewController.m */,
+				363F8E1018EDEC3100AA9218 /* BTIArrayTableViewController.h */,
+				363F8E1118EDEC3100AA9218 /* BTIArrayTableViewController.m */,
+				363F8E1418EDECDE00AA9218 /* BTIManagerTableViewController.h */,
+				363F8E1518EDECDE00AA9218 /* BTIManagerTableViewController.m */,
+			);
+			name = "Table View Controllers";
+			sourceTree = "<group>";
+		};
+		3655D786199EDFCD003390D3 /* Collection View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3655D787199EDFF3003390D3 /* BTICollectionViewController.h */,
+				3655D788199EDFF3003390D3 /* BTICollectionViewController.m */,
+				3655D78A199EE2E3003390D3 /* BTIArrayCollectionViewController.h */,
+				3655D78B199EE2E3003390D3 /* BTIArrayCollectionViewController.m */,
+				3655D78D199EE44C003390D3 /* BTIManagerCollectionViewController.h */,
+				3655D78E199EE44C003390D3 /* BTIManagerCollectionViewController.m */,
+			);
+			name = "Collection View Controllers";
+			sourceTree = "<group>";
+		};
+		3655D790199EE7C6003390D3 /* Web View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3655D795199EEB48003390D3 /* BTIWebViewController.h */,
+				3655D796199EEB48003390D3 /* BTIWebViewController.m */,
+			);
+			name = "Web View Controller";
+			sourceTree = "<group>";
+		};
+		3655D791199EEA39003390D3 /* Misc Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3655D792199EEA73003390D3 /* BTIFileUtilities.h */,
+				3655D793199EEA73003390D3 /* BTIFileUtilities.m */,
+			);
+			name = "Misc Helpers";
 			sourceTree = "<group>";
 		};
 		366E0D6B18E9E93C0006B900 = {
@@ -310,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				366E0DB718E9E9E90006B900 /* BTIKit.h */,
+				3655D791199EEA39003390D3 /* Misc Helpers */,
 				366E0DB018E9E9680006B900 /* Categories */,
 				366E0DB118E9E9680006B900 /* Models */,
 				366E0DB218E9E9680006B900 /* View Controllers */,
@@ -322,20 +442,32 @@
 		366E0DB018E9E9680006B900 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				3655D79D199FB874003390D3 /* NSArray+BTIKitAdditions.h */,
+				3655D79E199FB874003390D3 /* NSArray+BTIKitAdditions.m */,
 				362F9D4818F87BA00093C55F /* NSFileManager+BTIKitAdditions.h */,
 				362F9D4918F87BA00093C55F /* NSFileManager+BTIKitAdditions.m */,
 				36CAEE5118EA4B38004903BA /* NSMutableArray+BTIKitAdditions.h */,
 				36CAEE5218EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m */,
 				36CAEE5A18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.h */,
 				36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m */,
+				3655D771199E6810003390D3 /* NSNull+BTIKitAdditions.h */,
+				3655D772199E6810003390D3 /* NSNull+BTIKitAdditions.m */,
 				362F9D4B18F87E980093C55F /* NSString+BTIKitAdditions.h */,
 				362F9D4C18F87E980093C55F /* NSString+BTIKitAdditions.m */,
+				3655D779199E96E3003390D3 /* UICollectionView+BTIKitAdditions.h */,
+				3655D77A199E96E3003390D3 /* UICollectionView+BTIKitAdditions.m */,
+				3655D77C199E9778003390D3 /* UICollectionViewCell+BTIKitAdditions.h */,
+				3655D77D199E9778003390D3 /* UICollectionViewCell+BTIKitAdditions.m */,
 				36CAEE5C18EA5295004903BA /* UIDevice+BTIKitAdditions.h */,
 				36CAEE5D18EA5295004903BA /* UIDevice+BTIKitAdditions.m */,
 				36CAEE5E18EA5295004903BA /* UITableView+BTIKitAdditions.h */,
 				36CAEE5F18EA5295004903BA /* UITableView+BTIKitAdditions.m */,
 				36A0E96C18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.h */,
 				36A0E96D18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m */,
+				3655D776199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.h */,
+				3655D777199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m */,
+				3655D7B2199FE260003390D3 /* UIViewController+BTIKitAdditions.h */,
+				3655D7B3199FE260003390D3 /* UIViewController+BTIKitAdditions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -362,12 +494,9 @@
 			children = (
 				366E0DBE18EA0AC20006B900 /* BTIViewController.h */,
 				366E0DBF18EA0AC20006B900 /* BTIViewController.m */,
-				363F8E0C18EDE03B00AA9218 /* BTITableViewController.h */,
-				363F8E0D18EDE03B00AA9218 /* BTITableViewController.m */,
-				363F8E1018EDEC3100AA9218 /* BTIArrayTableViewController.h */,
-				363F8E1118EDEC3100AA9218 /* BTIArrayTableViewController.m */,
-				363F8E1418EDECDE00AA9218 /* BTIManagerTableViewController.h */,
-				363F8E1518EDECDE00AA9218 /* BTIManagerTableViewController.m */,
+				3655D786199EDFCD003390D3 /* Collection View Controllers */,
+				3655D785199EDFBA003390D3 /* Table View Controllers */,
+				3655D790199EE7C6003390D3 /* Web View Controller */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -375,8 +504,12 @@
 		366E0DB318E9E9680006B900 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3655D782199E9CB1003390D3 /* BTICollectionViewCell.h */,
+				3655D783199E9CB1003390D3 /* BTICollectionViewCell.m */,
 				366E0DB418E9E97D0006B900 /* BTITableViewCell.h */,
 				366E0DB518E9E97D0006B900 /* BTITableViewCell.m */,
+				3655D77F199E9C9C003390D3 /* BTITableViewHeaderFooterView.h */,
+				3655D780199E9C9C003390D3 /* BTITableViewHeaderFooterView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,7 +519,10 @@
 			children = (
 				369A47D818EB846E00FF975B /* BTINSMutableArrayTests.m */,
 				363F8DFC18EC66E000AA9218 /* BTINSNotificationCenterTests.m */,
+				3655D774199E687D003390D3 /* BTINSStringTests.m */,
+				3655D7A7199FD5E0003390D3 /* BTIUICollectionViewCellTests.m */,
 				36AF51D218EF57E3002C8C80 /* BTIUITableViewCellTests.m */,
+				3655D7A0199FD383003390D3 /* BTIUITableViewHeaderFooterViewTests.m */,
 			);
 			name = "Category Tests";
 			sourceTree = "<group>";
@@ -468,10 +604,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3655D7AD199FD633003390D3 /* SampleCollectionViewCell1.xib in Resources */,
 				361EE9F118F6F65100ED8FE8 /* SampleDetailViewController.xib in Resources */,
 				366E0D9318E9E93C0006B900 /* Images.xcassets in Resources */,
 				366E0D8218E9E93C0006B900 /* InfoPlist.strings in Resources */,
+				3655D79C199FB434003390D3 /* SampleWebViewController.xib in Resources */,
 				363F8E2518EDF37500AA9218 /* SampleBasicTableViewController.xib in Resources */,
+				3655D7A6199FD40B003390D3 /* SampleTableHeaderFooterView.xib in Resources */,
 				36544ED918F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */,
 				363F8E2C18EDF39900AA9218 /* SampleAdvancedTableViewController.xib in Resources */,
 				363F8E1D18EDF2B200AA9218 /* SamplePlainViewController.xib in Resources */,
@@ -497,30 +636,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3655D784199E9CB1003390D3 /* BTICollectionViewCell.m in Sources */,
+				3655D79F199FB874003390D3 /* NSArray+BTIKitAdditions.m in Sources */,
 				36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m in Sources */,
+				3655D7AB199FD611003390D3 /* SampleCollectionViewCell1.m in Sources */,
 				36CAEE5618EA4C5C004903BA /* BTITableSectionInfo.m in Sources */,
 				36CAEE6118EA5295004903BA /* UIDevice+BTIKitAdditions.m in Sources */,
+				3655D789199EDFF3003390D3 /* BTICollectionViewController.m in Sources */,
 				361EE9F018F6F65100ED8FE8 /* SampleDetailViewController.m in Sources */,
 				36A0E96E18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m in Sources */,
+				3655D781199E9C9C003390D3 /* BTITableViewHeaderFooterView.m in Sources */,
 				36CAEE6218EA5295004903BA /* UITableView+BTIKitAdditions.m in Sources */,
 				366E0DBD18E9ED990006B900 /* BTINotificationInfo.m in Sources */,
+				3655D778199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m in Sources */,
 				36CAEE5918EA4FE5004903BA /* BTITableRowInfo.m in Sources */,
 				366E0DBA18E9EB260006B900 /* BTIObject.m in Sources */,
+				3655D77B199E96E3003390D3 /* UICollectionView+BTIKitAdditions.m in Sources */,
+				3655D794199EEA73003390D3 /* BTIFileUtilities.m in Sources */,
+				3655D797199EEB48003390D3 /* BTIWebViewController.m in Sources */,
 				363F8E0E18EDE03B00AA9218 /* BTITableViewController.m in Sources */,
 				363F8E1B18EDF2B200AA9218 /* SamplePlainViewController.m in Sources */,
 				362F9D4D18F87E980093C55F /* NSString+BTIKitAdditions.m in Sources */,
 				369A47C418EB194200FF975B /* BTITableContentsManager.m in Sources */,
 				366E0DC018EA0AC20006B900 /* BTIViewController.m in Sources */,
+				3655D7B4199FE260003390D3 /* UIViewController+BTIKitAdditions.m in Sources */,
 				366E0D8818E9E93C0006B900 /* BTIAppDelegate.m in Sources */,
 				363F8E1618EDECDE00AA9218 /* BTIManagerTableViewController.m in Sources */,
 				363F8E2A18EDF39900AA9218 /* SampleAdvancedTableViewController.m in Sources */,
+				3655D77E199E9778003390D3 /* UICollectionViewCell+BTIKitAdditions.m in Sources */,
 				363F8E1218EDEC3100AA9218 /* BTIArrayTableViewController.m in Sources */,
 				36544ED718F32E1E00B9B7A2 /* SampleTableViewCell1.m in Sources */,
+				3655D79B199FB434003390D3 /* SampleWebViewController.m in Sources */,
+				3655D773199E6810003390D3 /* NSNull+BTIKitAdditions.m in Sources */,
 				363F8E2318EDF37500AA9218 /* SampleBasicTableViewController.m in Sources */,
 				362F9D4A18F87BA00093C55F /* NSFileManager+BTIKitAdditions.m in Sources */,
 				366E0D8418E9E93C0006B900 /* main.m in Sources */,
+				3655D7A4199FD3FA003390D3 /* SampleTableHeaderFooterView.m in Sources */,
 				366E0DB618E9E97D0006B900 /* BTITableViewCell.m in Sources */,
+				3655D78C199EE2E3003390D3 /* BTIArrayCollectionViewController.m in Sources */,
 				36CAEE5318EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m in Sources */,
+				3655D78F199EE44C003390D3 /* BTIManagerCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +685,12 @@
 			files = (
 				363F8E0418ECF5DC00AA9218 /* BTITableContentsManagerTests.m in Sources */,
 				36AF51D318EF57E3002C8C80 /* BTIUITableViewCellTests.m in Sources */,
+				3655D7A1199FD383003390D3 /* BTIUITableViewHeaderFooterViewTests.m in Sources */,
 				363F8E0718EDD40400AA9218 /* BTITableViewCellTests.m in Sources */,
+				3655D7B1199FDE23003390D3 /* BTITableViewHeaderFooterViewTests.m in Sources */,
+				3655D7A8199FD5E0003390D3 /* BTIUICollectionViewCellTests.m in Sources */,
+				3655D775199E687D003390D3 /* BTINSStringTests.m in Sources */,
+				3655D7AF199FDB8B003390D3 /* BTICollectionViewCellTests.m in Sources */,
 				363F8E0B18EDD83700AA9218 /* BTIViewControllerTests.m in Sources */,
 				363F8DFD18EC66E000AA9218 /* BTINSNotificationCenterTests.m in Sources */,
 				369A47D918EB846E00FF975B /* BTINSMutableArrayTests.m in Sources */,

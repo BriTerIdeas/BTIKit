@@ -1,6 +1,7 @@
 //
 //  NSMutableArray+BTIKitAdditions.h
 //  BTIKit
+//  v1.1
 //
 //  Created by Brian Slick in March 2014
 //  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.
@@ -24,4 +25,11 @@
  */
 - (void)moveObjectAtIndexBTI:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex;
 
+/**
+ Adds the provided string to the receiver. If the string is nil or blank, or if the object is not a string, it will not be added. This method is intended to be a companion to componentsJoinedByString:, allowing an array to be quickly populated with strings while removing a lot of validity checking boilerplate.
+
+ @param string String object to be added to the array
+ */
+- (void)safelyAddPopulatedStringBTI:(NSString *)string;
+ 
 @end

@@ -14,6 +14,7 @@
 // Sub-controllers
 
 // Views
+#import "SampleTableHeaderFooterView.h"
 
 // Private Constants
 
@@ -222,6 +223,24 @@
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 
+#pragma mark - BTITableViewController Overrides
+
+- (void)registerNibsForTableView:(UITableView *)tableView
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    [SampleTableHeaderFooterView registerNibForTableViewBTI:tableView];
+
+    SampleTableHeaderFooterView *view = [SampleTableHeaderFooterView dequeueHeaderFooterViewFromTableViewBTI:tableView];
+    
+    CGFloat headerFooterHeight = CGRectGetHeight([view frame]);
+    
+    [tableView setSectionHeaderHeight:headerFooterHeight];
+    [tableView setSectionFooterHeight:headerFooterHeight];
+    
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+}
+
 #pragma mark - Notification Handlers
 
 - (void)doSomethingForVisibleNotification:(NSNotification *)notification
@@ -285,16 +304,23 @@
 
 #pragma mark - UITableViewDataSource Methods
 
-- (NSString *)tableView:(UITableView *)tableView
-titleForHeaderInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView
+viewForHeaderInSection:(NSInteger)section
 {
-    return [[self mainContentsManager] headerTitleInSection:section];
+    SampleTableHeaderFooterView *view = [SampleTableHeaderFooterView dequeueHeaderFooterViewFromTableViewBTI:tableView];
+    
+    [[view verificationLabel] setText:[[self mainContentsManager] headerTitleInSection:section]];
+    
+    return view;
 }
 
-- (NSString *)tableView:(UITableView *)tableView
-titleForFooterInSection:(NSInteger)section
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    return [[self mainContentsManager] footerTitleInSection:section];
+    SampleTableHeaderFooterView *view = [SampleTableHeaderFooterView dequeueHeaderFooterViewFromTableViewBTI:tableView];
+    
+    [[view verificationLabel] setText:[[self mainContentsManager] footerTitleInSection:section]];
+    
+    return view;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView

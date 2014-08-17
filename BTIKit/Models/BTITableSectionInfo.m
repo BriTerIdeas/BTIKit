@@ -1,6 +1,7 @@
 //
 //  BTITableSectionInfo.m
 //  BTIKit
+//  v1.1
 //
 //  Created by Brian Slick in March 2014
 //  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.

@@ -44,4 +44,42 @@
     XCTAssertEqualObjects(sourceArray, finalArray, @"The array contents should have been reordered");
 }
 
+- (void)testAddingPopulatedString
+{
+    NSMutableArray *array = [NSMutableArray array];
+    
+    [array safelyAddPopulatedStringBTI:@"Test"];
+    
+    XCTAssertEqual(1, [array count], @"String should have been added");
+}
+
+- (void)testAddingEmptyString
+{
+    NSMutableArray *array = [NSMutableArray array];
+
+    [array safelyAddPopulatedStringBTI:@""];
+    
+    XCTAssertEqual(0, [array count], @"String should not have been added");
+}
+
+- (void)testAddingNil
+{
+    NSMutableArray *array = [NSMutableArray array];
+    
+    [array safelyAddPopulatedStringBTI:nil];
+
+    XCTAssertEqual(0, [array count], @"String should not have been added");
+}
+
+- (void)testAddingNonStringObject
+{
+    NSMutableArray *array = [NSMutableArray array];
+    
+    id object = [NSNull null];
+    
+    [array safelyAddPopulatedStringBTI:object];
+    
+    XCTAssertEqual(0, [array count], @"Object should not have been added");
+}
+
 @end
