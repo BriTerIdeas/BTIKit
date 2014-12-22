@@ -1,3 +1,12 @@
+//
+//  BTIMacros.h
+//  v1.2
+//
+//  Created by Brian Slick in December 2014
+//  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.
+//  https://github.com/BriTerIdeas/BTIKit
+//
+
 // Master NSLog killer. Doesn't do anything unless explicitly defined in Build Settings.
 
 // http://clingingtoideas.blogspot.com/2009/08/it-nslog-nslog.html

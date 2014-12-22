@@ -1,7 +1,7 @@
 //
 //  UIDevice+BTIKitAdditions.h
 //  BTIKit
-//  v1.1
+//  v1.2
 //
 //  Created by Brian Slick in March 2014
 //  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.
