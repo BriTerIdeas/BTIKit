@@ -10,7 +10,8 @@
 
 #import "BTINotificationInfo.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
 
 @interface BTINotificationInfo ()
 

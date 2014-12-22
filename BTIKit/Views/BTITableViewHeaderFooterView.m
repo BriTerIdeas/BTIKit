@@ -11,7 +11,7 @@
 #import "BTITableViewHeaderFooterView.h"
 
 // Models and other global
-#import "BTIKit.h"
+#import "BTIMacros.h"
 
 // Private Constants
 
@@ -34,7 +34,7 @@
 
 - (id)initWithReuseIdentifier:(NSString *)reuseIdentifier
 {
-    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+    //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
 
     self = [super initWithReuseIdentifier:[[self class] reuseIdentifierBTI]];
     if (self)
@@ -42,7 +42,7 @@
         // Initialization code
     }
     
-    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+    //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
     return self;
 }
 

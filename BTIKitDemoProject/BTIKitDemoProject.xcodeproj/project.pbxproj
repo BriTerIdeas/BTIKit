@@ -174,7 +174,6 @@
 		366E0D7F18E9E93C0006B900 /* BTIKitDemoProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTIKitDemoProject-Info.plist"; sourceTree = "<group>"; };
 		366E0D8118E9E93C0006B900 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		366E0D8318E9E93C0006B900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		366E0D8518E9E93C0006B900 /* BTIKitDemoProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTIKitDemoProject-Prefix.pch"; sourceTree = "<group>"; };
 		366E0D8618E9E93C0006B900 /* BTIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTIAppDelegate.h; sourceTree = "<group>"; };
 		366E0D8718E9E93C0006B900 /* BTIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTIAppDelegate.m; sourceTree = "<group>"; };
 		366E0D9218E9E93C0006B900 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -197,6 +196,7 @@
 		369A47D818EB846E00FF975B /* BTINSMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINSMutableArrayTests.m; sourceTree = "<group>"; };
 		36A0E96C18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+BTIKitAdditions.h"; sourceTree = "<group>"; };
 		36A0E96D18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		36AC00201A4487D600FD7A15 /* BTIMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTIMacros.h; sourceTree = "<group>"; };
 		36AF51D218EF57E3002C8C80 /* BTIUITableViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIUITableViewCellTests.m; sourceTree = "<group>"; };
 		36CAEE5118EA4B38004903BA /* NSMutableArray+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BTIKitAdditions.h"; sourceTree = "<group>"; };
 		36CAEE5218EA4B38004903BA /* NSMutableArray+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BTIKitAdditions.m"; sourceTree = "<group>"; };
@@ -398,7 +398,6 @@
 				366E0D7F18E9E93C0006B900 /* BTIKitDemoProject-Info.plist */,
 				366E0D8018E9E93C0006B900 /* InfoPlist.strings */,
 				366E0D8318E9E93C0006B900 /* main.m */,
-				366E0D8518E9E93C0006B900 /* BTIKitDemoProject-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -429,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				366E0DB718E9E9E90006B900 /* BTIKit.h */,
+				36AC00201A4487D600FD7A15 /* BTIMacros.h */,
 				3655D791199EEA39003390D3 /* Misc Helpers */,
 				366E0DB018E9E9680006B900 /* Categories */,
 				366E0DB118E9E9680006B900 /* Models */,
@@ -807,7 +807,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProject/BTIKitDemoProject-Info.plist";
 				OTHER_CFLAGS = "-Wdocumentation";
 				PRODUCT_NAME = BTIKitDemoProject;
@@ -821,7 +821,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProject/BTIKitDemoProject-Info.plist";
 				OTHER_CFLAGS = "-Wdocumentation";
 				PRODUCT_NAME = BTIKitDemoProject;
@@ -914,7 +914,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProject/BTIKitDemoProject-Info.plist";
 				OTHER_CFLAGS = "-Wdocumentation";
 				PRODUCT_NAME = BTIKitDemoProject;

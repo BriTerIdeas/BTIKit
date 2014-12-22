@@ -10,7 +10,8 @@
 
 #import "NSFileManager+BTIKitAdditions.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
 
 @implementation NSFileManager (BTIKitAdditions)
 

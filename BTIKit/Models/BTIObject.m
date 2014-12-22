@@ -10,8 +10,9 @@
 
 #import "BTIObject.h"
 
+// Models and other global
 #import <objc/runtime.h>
-#import "BTIKit.h"
+#import "BTIMacros.h"
 
 @interface BTIObject ()
 

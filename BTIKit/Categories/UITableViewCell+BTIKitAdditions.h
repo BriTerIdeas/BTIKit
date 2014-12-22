@@ -8,7 +8,8 @@
 //  https://github.com/BriTerIdeas/BTIKit
 //
 
-#import <UIKit/UIKit.h>
+// Libraries
+@import UIKit;
 
 @interface UITableViewCell (BTIKitAdditions)
 

@@ -8,7 +8,8 @@
 //  https://github.com/BriTerIdeas/BTIKit
 //
 
-#import <Foundation/Foundation.h>
+// Libraries
+@import Foundation;
 
 @interface NSNotificationCenter (BTIKitAdditions)
 

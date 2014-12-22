@@ -11,7 +11,7 @@
 #import "BTICollectionViewController.h"
 
 // Models and other global
-#import "BTIKit.h"
+#import "BTIMacros.h"
 
 // Sub-controllers
 

@@ -29,7 +29,7 @@
  */
 
 // Libraries
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 // Forward Declarations and Classes
 #import "BTINotificationInfo.h"

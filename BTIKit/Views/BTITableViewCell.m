@@ -12,7 +12,7 @@
 #import "BTITableViewCell.h"
 
 // Models and other global
-#import "BTIKit.h"
+#import "BTIMacros.h"
 
 // Private Constants
 

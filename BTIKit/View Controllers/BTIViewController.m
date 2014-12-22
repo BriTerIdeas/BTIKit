@@ -11,7 +11,7 @@
 #import "BTIViewController.h"
 
 // Models and other global
-#import "BTIKit.h"
+#import "BTIMacros.h"
 
 // Sub-controllers
 
@@ -41,25 +41,6 @@
     
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
-
-// Discovered an edge case where the unloading caused a problem.
-// Disabling pending further review.
-//- (void)didReceiveMemoryWarning
-//{
-//    //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-//       
-//    [super didReceiveMemoryWarning];
-//    
-//    if ([self isViewLoaded])
-//    {
-//        if ([[self view] window] == nil)
-//        {
-//            [self setView:nil];
-//        }
-//    }
-//    
-//    //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
-//}
 
 #pragma mark - Initialization and UI Creation Methods
 

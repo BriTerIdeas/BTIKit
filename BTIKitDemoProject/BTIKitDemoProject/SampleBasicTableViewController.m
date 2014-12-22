@@ -9,6 +9,7 @@
 #import "SampleBasicTableViewController.h"
 
 // Models and other global
+#import "Constants.h"
 #import "BTIKit.h"
 
 // Sub-controllers

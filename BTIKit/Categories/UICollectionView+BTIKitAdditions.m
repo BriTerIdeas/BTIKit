@@ -10,7 +10,8 @@
 
 #import "UICollectionView+BTIKitAdditions.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
 
 @implementation UICollectionView (BTIKitAdditions)
 

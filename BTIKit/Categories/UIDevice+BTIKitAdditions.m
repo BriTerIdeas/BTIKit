@@ -10,7 +10,8 @@
 
 #import "UIDevice+BTIKitAdditions.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
 
 @implementation UIDevice (BTIKitAdditions)
 

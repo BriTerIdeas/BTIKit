@@ -23,6 +23,7 @@
  */
 
 // Libraries
+@import UIKit;
 
 // Classes and Forward Declarations
 #import "BTIObject.h"

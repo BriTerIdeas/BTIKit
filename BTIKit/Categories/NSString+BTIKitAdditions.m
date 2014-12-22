@@ -10,7 +10,8 @@
 
 #import "NSString+BTIKitAdditions.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
 
 @implementation NSString (BTIKitAdditions)
 

@@ -10,7 +10,10 @@
 
 #import "NSArray+BTIKitAdditions.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
+
+// Private Constants
 
 @implementation NSArray (BTIKitAdditions)
 

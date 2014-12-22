@@ -11,7 +11,10 @@
 #import "BTIManagerTableViewController.h"
 
 // Models and other global
-#import "BTIKit.h"
+#import "BTIMacros.h"
+#import "BTITableRowInfo.h"
+#import "BTITableSectionInfo.h"
+#import "BTITableContentsManager.h"
 
 // Sub-controllers
 

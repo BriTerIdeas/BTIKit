@@ -10,9 +10,8 @@
 
 #import "BTITableContentsManager.h"
 
-#import "BTIKit.h"
-
 // Models and other global
+#import "BTIMacros.h"
 #import "BTITableSectionInfo.h"
 #import "BTITableRowInfo.h"
 
@@ -356,7 +355,7 @@ CGFloat const BTIStandardMinimumRowHeight = 44.0;
     
     NSMutableArray *titles = [NSMutableArray array];
     
-    for (BTITableSectionInfo *sectionInfo in self)
+    for (BTITableSectionInfo *sectionInfo in [self sections])
     {
         if ([sectionInfo sectionIndexTitle] == nil)
         {

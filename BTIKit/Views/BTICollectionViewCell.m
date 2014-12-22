@@ -11,7 +11,7 @@
 #import "BTICollectionViewCell.h"
 
 // Models and other global
-#import "BTIKit.h"
+#import "BTIMacros.h"
 
 // Private Constants
 
@@ -68,10 +68,6 @@
                                     forIndexPath:(NSIndexPath *)indexPath
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-
-    NSLog(@"collectionView: %@", collectionView);
-    NSLog(@"indexPath: %@", indexPath);
-    NSLog(@"reuseIdentifier: %@", [[self class] reuseIdentifierBTI]);
     
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
     return [collectionView dequeueReusableCellWithReuseIdentifier:[[self class] reuseIdentifierBTI] forIndexPath:indexPath];

@@ -10,7 +10,10 @@
 
 #import "BTIFileUtilities.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "NSFileManager+BTIKitAdditions.h"
+
+// Private Constants
 
 @interface BTIFileUtilities ()
 
@@ -67,7 +70,7 @@
     
     NSURL *urlToReturn = [urls firstObject];
     
-    if ( (urlToReturn != nil) && (![fileManager fileExistsAtPath:[urlToReturn path]]))
+    if ( (urlToReturn != nil) && (![fileManager fileExistsAtPath:[urlToReturn path]]) )
     {
         [fileManager createDirectoryAtURLBTI:urlToReturn
                  withIntermediateDirectories:YES

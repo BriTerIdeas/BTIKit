@@ -10,7 +10,9 @@
 
 #import "NSMutableArray+BTIKitAdditions.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
+#import "NSString+BTIKitAdditions.h"
 
 @implementation NSMutableArray (BTIKitAdditions)
 

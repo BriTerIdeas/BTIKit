@@ -10,7 +10,8 @@
 
 #import "UITableViewCell+BTIKitAdditions.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
 
 @implementation UITableViewCell (BTIKitAdditions)
 

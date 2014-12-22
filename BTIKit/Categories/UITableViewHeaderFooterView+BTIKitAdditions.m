@@ -10,6 +10,9 @@
 
 #import "UITableViewHeaderFooterView+BTIKitAdditions.h"
 
+// Models and other global
+#import "BTIMacros.h"
+
 @implementation UITableViewHeaderFooterView (BTIKitAdditions)
 
 + (id)headerFooterViewFromNibNameBTI:(NSString *)nibNameOrNil

@@ -10,7 +10,9 @@
 
 #import "BTITableSectionInfo.h"
 
-#import "BTIKit.h"
+// Models and other global
+#import "BTIMacros.h"
+#import "BTITableRowInfo.h"
 
 // Models and other global
 

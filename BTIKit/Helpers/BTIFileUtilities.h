@@ -9,7 +9,7 @@
 //
 
 // Libraries
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 // Classes and Forward Declarations
 

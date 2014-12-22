@@ -17,6 +17,7 @@
  */
 
 // Libraries
+@import Foundation;
 
 // Classes and Forward Declarations
 
