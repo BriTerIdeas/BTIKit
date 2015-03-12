@@ -79,13 +79,11 @@
     
     [super populateNotificationInfos];
     
-    [self addLifetimeNotificationInfoForName:kLifetimeNotification
-                                    selector:@selector(doSomethingForLifetimeNotification:)
-                                      object:nil];
+    [self addLifetimeNotificationInfoForName:BTILifetimeNotification
+                                    selector:@selector(doSomethingForLifetimeNotification:)];
     
-    [self addVisibleNotificationInfoForName:kVisibleNotification
-                                   selector:@selector(doSomethingForVisibleNotification:)
-                                     object:nil];
+    [self addVisibleNotificationInfoForName:BTIVisibleNotification
+                                   selector:@selector(doSomethingForVisibleNotification:)];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -97,7 +95,7 @@
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
     NSArray *viewControllers = [[self tabBarController] viewControllers];
-    NSInteger index = [viewControllers indexOfObject:self];
+    NSInteger index = [viewControllers indexOfObject:[self navigationController]];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *visible* notification"
@@ -114,7 +112,7 @@
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
     NSArray *viewControllers = [[self tabBarController] viewControllers];
-    NSInteger index = [viewControllers indexOfObject:self];
+    NSInteger index = [viewControllers indexOfObject:[self navigationController]];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
                                                     message:@"Received *lifetime* notification"
@@ -133,7 +131,7 @@
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
     // It would be on the main thread anyway, but I need a reason to use this...
-    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:kVisibleNotification];
+    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:BTIVisibleNotification];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -143,7 +141,7 @@
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
     // It would be on the main thread anyway, but I need a reason to use this...
-    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:kLifetimeNotification];
+    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:BTILifetimeNotification];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }

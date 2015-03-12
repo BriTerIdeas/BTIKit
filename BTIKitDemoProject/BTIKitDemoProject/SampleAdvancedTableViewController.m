@@ -213,11 +213,11 @@
     
     [super populateNotificationInfos];
 
-    [self addLifetimeNotificationInfoForName:kLifetimeNotification
+    [self addLifetimeNotificationInfoForName:BTILifetimeNotification
                                     selector:@selector(doSomethingForLifetimeNotification:)
                                       object:nil];
     
-    [self addVisibleNotificationInfoForName:kVisibleNotification
+    [self addVisibleNotificationInfoForName:BTIVisibleNotification
                                    selector:@selector(doSomethingForVisibleNotification:)
                                      object:nil];
     
@@ -285,7 +285,7 @@
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
     // It would be on the main thread anyway, but I need a reason to use this...
-    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:kVisibleNotification];
+    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:BTIVisibleNotification];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -295,7 +295,7 @@
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
     // It would be on the main thread anyway, but I need a reason to use this...
-    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:kLifetimeNotification];
+    [[NSNotificationCenter defaultCenter] postNotificationNameOnMainThreadBTI:BTILifetimeNotification];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }

@@ -8,22 +8,22 @@
 // Libraries
 @import UIKit;
 
-@interface UITableViewHeaderFooterView (BTIKitAdditions)
+@interface UIView (BTIKitAdditions)
 
 /**
  Returns a view loaded from a nib with the provided name
  
  @param nibNameOrNil The name of the nib file to load. The nib file name should not contain any leading path information. If you specify nil, will look for a nib with a matching class name.
  
- @return A UITableViewHeaderFooterView (or subclass) object, or nil.
+ @return A UIView (or subclass) object, or nil.
  */
-+ (instancetype)headerFooterViewFromNibNameBTI:(NSString *)nibNameOrNil;
++ (instancetype)viewFromNibNameBTI:(NSString *)nibNameOrNil;
 
 /**
  Returns a view loaded from a nib with name matching the class name.
  
- @return A UITableViewHeaderFooterView (or subclass) object, or nil.
+ @return A UIView (or subclass) object, or nil.
  */
-+ (instancetype)headerFooterViewFromNibBTI;
++ (instancetype)viewFromNibBTI;
 
 @end

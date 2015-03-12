@@ -1,4 +1,6 @@
+@import Foundation;
+
 #pragma mark - Notifications
 
-#define kVisibleNotification                    @"com.briterideas.kVisibleNotification"
-#define kLifetimeNotification                   @"com.briterideas.kLifetimeNotification"
+FOUNDATION_EXPORT NSString *const BTIVisibleNotification;
+FOUNDATION_EXPORT NSString *const BTILifetimeNotification;

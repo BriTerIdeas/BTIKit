@@ -1,13 +1,9 @@
 //
-//  BTITableViewCell.m
-//  BTIKit
-//  v1.2
+//  BTIKit -- [https://github.com/BriTerIdeas/BTIKit]
+//  v1.3
 //
-//  Created by Brian Slick in March 2014
-//  Copyright (c) 2014 BriTer Ideas LLC. All rights reserved.
-//  https://github.com/BriTerIdeas/BTIKit
+//  Created by Brian Slick. Copyright (c) 2015 BriTer Ideas LLC. All rights reserved.
 //
-//  reuseIdentifier concept from http://iphonedevelopment.blogspot.com/2010/04/table-view-cells-redux.html
 
 #import "BTITableViewCell.h"
 
@@ -50,6 +46,7 @@
 
 #pragma mark - UITableViewCell Overrides
 
+// From http://iphonedevelopment.blogspot.com/2010/04/table-view-cells-redux.html
 - (NSString *)reuseIdentifier
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
@@ -60,6 +57,7 @@
 
 #pragma mark - Misc Methods
 
+// From http://iphonedevelopment.blogspot.com/2010/04/table-view-cells-redux.html
 + (NSString *)reuseIdentifierBTI
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);

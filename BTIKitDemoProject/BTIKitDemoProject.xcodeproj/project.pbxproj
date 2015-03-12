@@ -71,6 +71,8 @@
 		366E0DBA18E9EB260006B900 /* BTIObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 366E0DB918E9EB260006B900 /* BTIObject.m */; };
 		366E0DBD18E9ED990006B900 /* BTINotificationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 366E0DBC18E9ED990006B900 /* BTINotificationInfo.m */; };
 		366E0DC018EA0AC20006B900 /* BTIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 366E0DBF18EA0AC20006B900 /* BTIViewController.m */; };
+		36804A131AB1E186000F6AE6 /* UIView+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36804A121AB1E186000F6AE6 /* UIView+BTIKitAdditions.m */; };
+		36804A151AB1E479000F6AE6 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 36804A141AB1E479000F6AE6 /* Constants.m */; };
 		369A47C418EB194200FF975B /* BTITableContentsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A47C318EB194200FF975B /* BTITableContentsManager.m */; };
 		369A47C718EB571100FF975B /* BTITableRowInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A47C618EB571100FF975B /* BTITableRowInfoTests.m */; };
 		369A47D918EB846E00FF975B /* BTINSMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 369A47D818EB846E00FF975B /* BTINSMutableArrayTests.m */; };
@@ -190,6 +192,9 @@
 		366E0DBC18E9ED990006B900 /* BTINotificationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINotificationInfo.m; sourceTree = "<group>"; };
 		366E0DBE18EA0AC20006B900 /* BTIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTIViewController.h; sourceTree = "<group>"; };
 		366E0DBF18EA0AC20006B900 /* BTIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTIViewController.m; sourceTree = "<group>"; };
+		36804A111AB1E186000F6AE6 /* UIView+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BTIKitAdditions.h"; sourceTree = "<group>"; };
+		36804A121AB1E186000F6AE6 /* UIView+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		36804A141AB1E479000F6AE6 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		369A47C218EB194200FF975B /* BTITableContentsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTITableContentsManager.h; sourceTree = "<group>"; };
 		369A47C318EB194200FF975B /* BTITableContentsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableContentsManager.m; sourceTree = "<group>"; };
 		369A47C618EB571100FF975B /* BTITableRowInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableRowInfoTests.m; sourceTree = "<group>"; };
@@ -383,6 +388,7 @@
 				366E0D8618E9E93C0006B900 /* BTIAppDelegate.h */,
 				366E0D8718E9E93C0006B900 /* BTIAppDelegate.m */,
 				363F8E1F18EDF2F900AA9218 /* Constants.h */,
+				36804A141AB1E479000F6AE6 /* Constants.m */,
 				366E0DAF18E9E9680006B900 /* BTIKit */,
 				363F8E0818EDD6A300AA9218 /* View Controllers */,
 				36544ED318F32DEE00B9B7A2 /* Views */,
@@ -466,6 +472,8 @@
 				36A0E96D18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m */,
 				3655D776199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.h */,
 				3655D777199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m */,
+				36804A111AB1E186000F6AE6 /* UIView+BTIKitAdditions.h */,
+				36804A121AB1E186000F6AE6 /* UIView+BTIKitAdditions.m */,
 				3655D7B2199FE260003390D3 /* UIViewController+BTIKitAdditions.h */,
 				3655D7B3199FE260003390D3 /* UIViewController+BTIKitAdditions.m */,
 			);
@@ -641,9 +649,11 @@
 				36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m in Sources */,
 				3655D7AB199FD611003390D3 /* SampleCollectionViewCell1.m in Sources */,
 				36CAEE5618EA4C5C004903BA /* BTITableSectionInfo.m in Sources */,
+				36804A151AB1E479000F6AE6 /* Constants.m in Sources */,
 				36CAEE6118EA5295004903BA /* UIDevice+BTIKitAdditions.m in Sources */,
 				3655D789199EDFF3003390D3 /* BTICollectionViewController.m in Sources */,
 				361EE9F018F6F65100ED8FE8 /* SampleDetailViewController.m in Sources */,
+				36804A131AB1E186000F6AE6 /* UIView+BTIKitAdditions.m in Sources */,
 				36A0E96E18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m in Sources */,
 				3655D781199E9C9C003390D3 /* BTITableViewHeaderFooterView.m in Sources */,
 				36CAEE6218EA5295004903BA /* UITableView+BTIKitAdditions.m in Sources */,
@@ -839,7 +849,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -861,7 +871,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProjectTests/BTIKitDemoProjectTests-Info.plist";
 				PRODUCT_NAME = BTIKitDemoProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -932,7 +942,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTIKitDemoProject/BTIKitDemoProject-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
