@@ -4,6 +4,8 @@ by **Brian Slick**
 Personal: [@BrianSlick](http://twitter.com/BrianSlick) | [Clinging To Ideas](http://clingingtoideas.blogspot.com)  
 Business: [@BriTerIdeas](http://twitter.com/BriTerIdeas) | [briterideas.com](http://briterideas.com)
 
+Newest version is: v1.4
+
 ### What is BTIKit?
 
 **A collection of classes and categories intended to take some pain out of common activities.**
