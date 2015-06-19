@@ -7,9 +7,17 @@
 
 #import "BTIObject.h"
 
-// Models and other global
+// Libraries
 #import <objc/runtime.h>
+
+// Other Global
 #import "BTIMacros.h"
+
+// Categories
+
+// Models
+
+// Private Constants
 
 @interface BTIObject ()
 

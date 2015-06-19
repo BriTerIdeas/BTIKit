@@ -8,7 +8,13 @@
 
 #import "SampleTableHeaderFooterView.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
+
+// Categories
+
+// Models
 
 // Private Constants
 

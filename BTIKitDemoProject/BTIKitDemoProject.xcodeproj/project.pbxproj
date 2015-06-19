@@ -31,7 +31,6 @@
 		363F8E2D18EDF39900AA9218 /* SampleAdvancedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363F8E2918EDF39900AA9218 /* SampleAdvancedTableViewController.xib */; };
 		36544ED718F32E1E00B9B7A2 /* SampleTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 36544ED518F32E1E00B9B7A2 /* SampleTableViewCell1.m */; };
 		36544ED918F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */; };
-		36544EDA18F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */; };
 		3655D773199E6810003390D3 /* NSNull+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D772199E6810003390D3 /* NSNull+BTIKitAdditions.m */; };
 		3655D775199E687D003390D3 /* BTINSStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D774199E687D003390D3 /* BTINSStringTests.m */; };
 		3655D778199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D777199E95D0003390D3 /* UITableViewHeaderFooterView+BTIKitAdditions.m */; };
@@ -84,6 +83,14 @@
 		36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5B18EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m */; };
 		36CAEE6118EA5295004903BA /* UIDevice+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5D18EA5295004903BA /* UIDevice+BTIKitAdditions.m */; };
 		36CAEE6218EA5295004903BA /* UITableView+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CAEE5F18EA5295004903BA /* UITableView+BTIKitAdditions.m */; };
+		36D6FBDF1B346078006291CA /* SampleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361EE9EF18F6F65100ED8FE8 /* SampleDetailViewController.xib */; };
+		36D6FBE01B346078006291CA /* SampleWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3655D79A199FB434003390D3 /* SampleWebViewController.xib */; };
+		36D6FBE11B3460A5006291CA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 36804A141AB1E479000F6AE6 /* Constants.m */; };
+		36D6FBE21B3460A5006291CA /* SamplePlainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8E1918EDF2B200AA9218 /* SamplePlainViewController.m */; };
+		36D6FBE31B3460A5006291CA /* SampleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 361EE9EE18F6F65100ED8FE8 /* SampleDetailViewController.m */; };
+		36D6FBE41B3460A5006291CA /* SampleBasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8E2118EDF37500AA9218 /* SampleBasicTableViewController.m */; };
+		36D6FBE51B3460A5006291CA /* SampleAdvancedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8E2818EDF39900AA9218 /* SampleAdvancedTableViewController.m */; };
+		36D6FBE61B3460A5006291CA /* SampleWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D799199FB434003390D3 /* SampleWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -631,7 +638,8 @@
 			files = (
 				363F8E2618EDF37500AA9218 /* SampleBasicTableViewController.xib in Resources */,
 				363F8E2D18EDF39900AA9218 /* SampleAdvancedTableViewController.xib in Resources */,
-				36544EDA18F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */,
+				36D6FBE01B346078006291CA /* SampleWebViewController.xib in Resources */,
+				36D6FBDF1B346078006291CA /* SampleDetailViewController.xib in Resources */,
 				366E0DA418E9E93C0006B900 /* InfoPlist.strings in Resources */,
 				363F8E1E18EDF2B200AA9218 /* SamplePlainViewController.xib in Resources */,
 			);
@@ -693,16 +701,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D6FBE31B3460A5006291CA /* SampleDetailViewController.m in Sources */,
+				36D6FBE51B3460A5006291CA /* SampleAdvancedTableViewController.m in Sources */,
+				36D6FBE21B3460A5006291CA /* SamplePlainViewController.m in Sources */,
 				363F8E0418ECF5DC00AA9218 /* BTITableContentsManagerTests.m in Sources */,
 				36AF51D318EF57E3002C8C80 /* BTIUITableViewCellTests.m in Sources */,
 				3655D7A1199FD383003390D3 /* BTIUITableViewHeaderFooterViewTests.m in Sources */,
 				363F8E0718EDD40400AA9218 /* BTITableViewCellTests.m in Sources */,
 				3655D7B1199FDE23003390D3 /* BTITableViewHeaderFooterViewTests.m in Sources */,
+				36D6FBE11B3460A5006291CA /* Constants.m in Sources */,
 				3655D7A8199FD5E0003390D3 /* BTIUICollectionViewCellTests.m in Sources */,
 				3655D775199E687D003390D3 /* BTINSStringTests.m in Sources */,
+				36D6FBE61B3460A5006291CA /* SampleWebViewController.m in Sources */,
 				3655D7AF199FDB8B003390D3 /* BTICollectionViewCellTests.m in Sources */,
 				363F8E0B18EDD83700AA9218 /* BTIViewControllerTests.m in Sources */,
 				363F8DFD18EC66E000AA9218 /* BTINSNotificationCenterTests.m in Sources */,
+				36D6FBE41B3460A5006291CA /* SampleBasicTableViewController.m in Sources */,
 				369A47D918EB846E00FF975B /* BTINSMutableArrayTests.m in Sources */,
 				363F8E0218ECEB6200AA9218 /* BTITableSectionInfoTests.m in Sources */,
 				363F8E0018ECABD600AA9218 /* BTINotificationInfoTests.m in Sources */,

@@ -21,7 +21,7 @@
 
 // Classes and Forward Declarations
 #import "BTIObject.h"
-@class BTITableRowInfo;
+#import "BTITableRowInfo.h"
 
 // Public Constants
 

@@ -7,11 +7,14 @@
 
 #import "BTITableSectionInfo.h"
 
-// Models and other global
-#import "BTIMacros.h"
-#import "BTITableRowInfo.h"
+// Libraries
 
-// Models and other global
+// Other Global
+#import "BTIMacros.h"
+
+// Categories
+
+// Models
 
 // Private Constants
 

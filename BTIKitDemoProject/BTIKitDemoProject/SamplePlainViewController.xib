@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SamplePlainViewController">
@@ -11,12 +12,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cdn-RY-dTK">
-                    <rect key="frame" x="20" y="69" width="280" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdn-RY-dTK">
+                    <rect key="frame" x="20" y="65" width="560" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="0iM-PY-GZ2"/>
+                    </constraints>
                     <state key="normal" title="Post Visible Notification">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -24,54 +27,119 @@
                         <action selector="visibleButtonPressed:" destination="-1" eventType="touchUpInside" id="vae-lP-Xx2"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Should only have 1 alert)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PfM-o5-m8G">
-                    <rect key="frame" x="20" y="107" width="280" height="17"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Should only have 1 alert)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfM-o5-m8G">
+                    <rect key="frame" x="20" y="108" width="560" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="NID-T0-U1u"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zU3-sb-cI2">
-                    <rect key="frame" x="20" y="170" width="280" height="30"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU3-sb-cI2">
+                    <rect key="frame" x="20" y="165" width="560" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="geJ-Ss-Tui"/>
+                    </constraints>
                     <state key="normal" title="Post Lifetime Notification">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="geJ-Ss-Tui"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <action selector="lifetimeButtonPressed:" destination="-1" eventType="touchUpInside" id="vhj-Pc-q62"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Should have 1 alert per tab)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gmg-wU-ebb">
-                    <rect key="frame" x="20" y="208" width="280" height="17"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Should have 1 alert per tab)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-wU-ebb">
+                    <rect key="frame" x="20" y="208" width="560" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="IhP-nd-a4N"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="IhP-nd-a4N"/>
+                        </mask>
+                    </variation>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DYV-Uh-Inn">
-                    <rect key="frame" x="101" y="269" width="119" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYV-Uh-Inn">
+                    <rect key="frame" x="20" y="265" width="560" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="ZTL-ZZ-UTA"/>
+                    </constraints>
                     <state key="normal" title="Show Detail View">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ZTL-ZZ-UTA"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <action selector="detailButtonPressed:" destination="-1" eventType="touchUpInside" id="lUB-ee-7Gk"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dnl-Fo-Qt3">
-                    <rect key="frame" x="105" y="347" width="110" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-Fo-Qt3">
+                    <rect key="frame" x="20" y="340" width="560" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fT6-ha-Un7"/>
+                    </constraints>
                     <state key="normal" title="Show Web View">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="fT6-ha-Un7"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <action selector="webButtonPressed:" destination="-1" eventType="touchUpInside" id="Grt-lY-s2c"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <constraints>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="trailing" secondItem="dnl-Fo-Qt3" secondAttribute="trailing" constant="85" id="2IZ-aj-m3z"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="height" secondItem="dnl-Fo-Qt3" secondAttribute="height" id="4Sa-Ed-3uu"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="width" secondItem="DYV-Uh-Inn" secondAttribute="width" id="4XP-Ix-aeK"/>
+                <constraint firstItem="Gmg-wU-ebb" firstAttribute="top" secondItem="zU3-sb-cI2" secondAttribute="bottom" constant="8" symbolic="YES" id="8qE-J4-pSN"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="leading" secondItem="PfM-o5-m8G" secondAttribute="leading" id="HGx-fD-AGO"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="HaJ-V7-WlJ"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="trailing" secondItem="PfM-o5-m8G" secondAttribute="trailing" id="IZa-UW-UlR"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="width" secondItem="dnl-Fo-Qt3" secondAttribute="width" id="K4j-b3-2KG"/>
+                <constraint firstItem="PfM-o5-m8G" firstAttribute="top" secondItem="cdn-RY-dTK" secondAttribute="bottom" constant="8" id="NRr-nm-Qc4"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="leading" secondItem="DYV-Uh-Inn" secondAttribute="leading" id="PCx-Lf-J9m"/>
+                <constraint firstItem="zU3-sb-cI2" firstAttribute="height" secondItem="cdn-RY-dTK" secondAttribute="height" id="Rg5-SE-2YM"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="leading" secondItem="dnl-Fo-Qt3" secondAttribute="leading" id="UHS-ao-1e8"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="height" secondItem="DYV-Uh-Inn" secondAttribute="height" id="UfM-CL-fIL"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="trailing" secondItem="DYV-Uh-Inn" secondAttribute="trailing" constant="80" id="VWB-MN-dor"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="leading" secondItem="Gmg-wU-ebb" secondAttribute="leading" id="a7f-OS-YyC"/>
+                <constraint firstItem="zU3-sb-cI2" firstAttribute="top" secondItem="PfM-o5-m8G" secondAttribute="bottom" constant="40" id="bwB-QD-nC1"/>
+                <constraint firstItem="zU3-sb-cI2" firstAttribute="leading" secondItem="cdn-RY-dTK" secondAttribute="leading" id="c4v-6j-CcS"/>
+                <constraint firstItem="zU3-sb-cI2" firstAttribute="width" secondItem="cdn-RY-dTK" secondAttribute="width" id="cNi-Da-nXP"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="trailing" secondItem="Gmg-wU-ebb" secondAttribute="trailing" id="d4g-Sa-nxV"/>
+                <constraint firstItem="Gmg-wU-ebb" firstAttribute="width" secondItem="PfM-o5-m8G" secondAttribute="width" id="dPw-MB-mLM"/>
+                <constraint firstItem="dnl-Fo-Qt3" firstAttribute="top" secondItem="DYV-Uh-Inn" secondAttribute="bottom" constant="40" id="gr4-Ne-4hD"/>
+                <constraint firstAttribute="trailing" secondItem="cdn-RY-dTK" secondAttribute="trailing" constant="20" symbolic="YES" id="jt9-e3-bpr"/>
+                <constraint firstItem="Gmg-wU-ebb" firstAttribute="height" secondItem="PfM-o5-m8G" secondAttribute="height" id="tDC-2L-t9r"/>
+                <constraint firstItem="cdn-RY-dTK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="xLn-1P-dna"/>
+                <constraint firstItem="DYV-Uh-Inn" firstAttribute="top" secondItem="Gmg-wU-ebb" secondAttribute="bottom" constant="40" id="z6V-4n-Pa4"/>
+                <constraint firstItem="zU3-sb-cI2" firstAttribute="trailing" secondItem="cdn-RY-dTK" secondAttribute="trailing" id="zHq-Y1-25V"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2IZ-aj-m3z"/>
+                    <exclude reference="VWB-MN-dor"/>
+                    <exclude reference="d4g-Sa-nxV"/>
+                    <exclude reference="zHq-Y1-25V"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="443" y="254"/>
         </view>
     </objects>
 </document>

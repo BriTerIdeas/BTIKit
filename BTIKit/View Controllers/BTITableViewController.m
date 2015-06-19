@@ -7,10 +7,16 @@
 
 #import "BTITableViewController.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
 #import "BTIMacros.h"
 
-// Sub-controllers
+// Categories
+
+// Models
+
+// View Controllers
 
 // Views
 
@@ -63,17 +69,6 @@
 
     [super viewDidLoad];
     
-    [self registerNibsForTableView:[self tableView]];
-
-    //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-    
-    [super viewWillAppear:animated];
-    
     UITableView *tableView = [self tableView];
     if (tableView == nil)
     {
@@ -89,12 +84,14 @@
     
     [tableView setDelegate:self];
     [tableView setDataSource:self];
-        
+    
     UISearchDisplayController *searchController = [self searchDisplayController];
     [searchController setDelegate:self];
     [searchController setSearchResultsDataSource:self];
     [searchController setSearchResultsDelegate:self];
-    
+
+    [self registerNibsForTableView:tableView];
+
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 

@@ -7,8 +7,16 @@
 
 #import "NSString+BTIKitAdditions.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
 #import "BTIMacros.h"
+
+// Categories
+
+// Models
+
+// Private Constants
 
 @implementation NSString (BTIKitAdditions)
 

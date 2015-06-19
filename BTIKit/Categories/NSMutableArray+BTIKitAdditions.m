@@ -7,9 +7,17 @@
 
 #import "NSMutableArray+BTIKitAdditions.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
 #import "BTIMacros.h"
+
+// Categories
 #import "NSString+BTIKitAdditions.h"
+
+// Models
+
+// Private Constants
 
 @implementation NSMutableArray (BTIKitAdditions)
 

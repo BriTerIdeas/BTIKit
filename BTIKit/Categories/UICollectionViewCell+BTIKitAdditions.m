@@ -7,11 +7,17 @@
 
 #import "UICollectionViewCell+BTIKitAdditions.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
 #import "BTIMacros.h"
 
 // Categories
 #import "UIView+BTIKitAdditions.h"
+
+// Models
+
+// Private Constants
 
 @implementation UICollectionViewCell (BTIKitAdditions)
 

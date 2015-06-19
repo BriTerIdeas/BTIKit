@@ -8,10 +8,17 @@
 
 #import "SampleWebViewController.h"
 
-// Models and other global
-#import "BTIKit.h"
+// Libraries
 
-// Sub-controllers
+// Other Global
+#import "BTIMacros.h"
+
+// Categories
+#import "NSArray+BTIKitAdditions.h"
+
+// Models
+
+// View Controllers
 
 // Views
 

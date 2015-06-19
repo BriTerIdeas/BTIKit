@@ -8,11 +8,18 @@
 
 #import "SampleBasicTableViewController.h"
 
-// Models and other global
-#import "Constants.h"
-#import "BTIKit.h"
+// Libraries
 
-// Sub-controllers
+// Other Global
+#import "Constants.h"
+#import "BTIMacros.h"
+
+// Categories
+#import "NSNotificationCenter+BTIKitAdditions.h"
+
+// Models
+
+// View Controllers
 
 // Views
 #import "SampleTableViewCell1.h"

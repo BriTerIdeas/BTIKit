@@ -30,6 +30,8 @@
 
 // Public Constants
 
+// Protocols
+
 typedef NS_ENUM(NSInteger, BTINotificationInfoLifespan) {
     BTINotificationInfoLifespanLifetime = 1,        // The observer should listen for its entire lifetime
     BTINotificationInfoLifespanVisible,             // The observer should only listen when it is on screen

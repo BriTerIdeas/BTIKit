@@ -7,8 +7,14 @@
 
 #import "BTIFileUtilities.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
+
+// Categories
 #import "NSFileManager+BTIKitAdditions.h"
+
+// Models
 
 // Private Constants
 

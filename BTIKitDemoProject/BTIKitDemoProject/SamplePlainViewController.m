@@ -8,11 +8,19 @@
 
 #import "SamplePlainViewController.h"
 
-// Models and other global
-#import "Constants.h"
-#import "BTIKit.h"
+// Libraries
 
-// Sub-controllers
+// Other Global
+#import "Constants.h"
+#import "BTIMacros.h"
+
+// Categories
+#import "NSNotificationCenter+BTIKitAdditions.h"
+#import "UIViewController+BTIKitAdditions.h"
+
+// Models
+
+// View Controllers
 #import "SampleDetailViewController.h"
 #import "SampleWebViewController.h"
 

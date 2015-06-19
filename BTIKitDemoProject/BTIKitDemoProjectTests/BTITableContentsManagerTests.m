@@ -85,7 +85,7 @@
     XCTAssertEqual(1, [manager numberOfSections], @"There should be one section in the manager");
 }
 
-- (void)testAddingRows
+- (void)testAddingRowsManually
 {
     BTITableContentsManager *manager = [self contentsManager];
     
@@ -108,16 +108,34 @@
     XCTAssert([manager numberOfSections] == 1, @"There should be one section in the manager");
 
     [manager addRowInfo:row2 makeNewSection:YES];
-    XCTAssert([manager numberOfSections] == 2, @"There should be one section in the manager");
+    XCTAssert([manager numberOfSections] == 2, @"There should be two sections in the manager");
 
     [manager addRowInfo:row3 makeNewSection:NO];
-    XCTAssert([manager numberOfSections] == 2, @"There should be one section in the manager");
+    XCTAssert([manager numberOfSections] == 2, @"There should be two sections in the manager");
 
     BTITableSectionInfo *section1 = [manager sectionInfoAtIndex:0];
     XCTAssert([section1 countOfRows] == 1, @"There should be one row in the first section");
     
     BTITableSectionInfo *section2 = [manager sectionInfoAtIndex:1];
     XCTAssert([section2 countOfRows] == 2, @"There should be two rows in the second section");
+}
+
+- (void)testAddingRowsAutomatically
+{
+    BTITableContentsManager *manager = [self contentsManager];
+    
+    [manager reset];
+    
+    BTITableRowInfo *row1 = [manager dequeueReusableRowInfoAndAddToContents];
+    BTITableRowInfo *row2 = [manager dequeueReusableRowInfoAndAddToContents];
+    BTITableRowInfo *row3 = [manager dequeueReusableRowInfoAndAddToContents];
+    
+    XCTAssertNotNil(row1, @"A row info object should have been created");
+    XCTAssertNotNil(row2, @"A row info object should have been created");
+    XCTAssertNotNil(row3, @"A row info object should have been created");
+
+    XCTAssert([manager numberOfSections] == 1, @"There should be only 1 section");
+    XCTAssert([manager numberOfRowsInSection:0] == 3, @"There should be 3 rows");
 }
 
 - (void)testNumberOfSections
@@ -197,6 +215,17 @@
     XCTAssertEqualObjects(@"Section 3 Header", [section4 headerTitle], @"Section header is not correct");
 }
 
+- (void)testSectionInfoForIdentifier
+{
+    BTITableContentsManager *manager = [self contentsManager];
+    
+    BTITableSectionInfo *noIdentifierSection = [manager sectionInfoForIdentifier:nil];
+    BTITableSectionInfo *identifierSection = [manager sectionInfoForIdentifier:@"Section 2 Identifier"];
+    
+    XCTAssertNil(noIdentifierSection, @"Should not have found a section");
+    XCTAssertEqualObjects(@"Section 2 Header", [identifierSection headerTitle], @"Retrieved section is not correct");
+}
+
 - (void)testRepresentedSectionObject
 {
     BTITableContentsManager *manager = [self contentsManager];
@@ -224,6 +253,17 @@
 
     XCTAssertEqualObjects(@"Section 0 Row 0 Text", [firstRowInfo text], @"Row info text is not correct");
     XCTAssertEqualObjects(@"Section 2 Row 2 Text", [secondRowInfo text], @"Row info text is not correct");
+}
+
+- (void)testRowInfoForIdentifier
+{
+    BTITableContentsManager *manager = [self contentsManager];
+    
+    BTITableRowInfo *noIdentifierRow = [manager rowInfoForIdentifier:nil];
+    BTITableRowInfo *identifierRow = [manager rowInfoForIdentifier:@"Section 1 Row 1 Identifier"];
+    
+    XCTAssertNil(noIdentifierRow, @"Should not have found a row info");
+    XCTAssertEqualObjects(@"Section 1 Row 1 Text", [identifierRow text], @"Retrieved row info is not correct");
 }
 
 - (void)testRepresentedObjectAtIndexPath

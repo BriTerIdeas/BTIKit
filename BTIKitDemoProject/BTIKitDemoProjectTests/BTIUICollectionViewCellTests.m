@@ -8,7 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
-#import "BTIKit.h"
+#import "UICollectionViewCell+BTIKitAdditions.h"
 #import "SampleCollectionViewCell1.h"
 
 @interface BTIUICollectionViewCellTests : XCTestCase

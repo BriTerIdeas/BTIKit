@@ -7,13 +7,16 @@
 
 #import "BTIManagerTableViewController.h"
 
-// Models and other global
-#import "BTIMacros.h"
-#import "BTITableRowInfo.h"
-#import "BTITableSectionInfo.h"
-#import "BTITableContentsManager.h"
+// Libraries
 
-// Sub-controllers
+// Other Global
+#import "BTIMacros.h"
+
+// Categories
+
+// Models
+
+// View Controllers
 
 // Views
 

@@ -7,10 +7,16 @@
 
 #import "BTICollectionViewController.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
 #import "BTIMacros.h"
 
-// Sub-controllers
+// Categories
+
+// Models
+
+// View Controllers
 
 // Views
 
@@ -63,7 +69,23 @@
     
     [super viewDidLoad];
     
-    [self registerNibsForCollectionView:[self collectionView]];
+    UICollectionView *collectionView = [self collectionView];
+    if (collectionView == nil)
+    {
+        UIView *mainView = [self view];
+        
+        collectionView = [[UICollectionView alloc] initWithFrame:[mainView bounds]];
+        [collectionView setAutoresizingMask:[mainView autoresizingMask]];
+        
+        [mainView addSubview:collectionView];
+        
+        [self setCollectionView:collectionView];
+    }
+    
+    [collectionView setDelegate:self];
+    [collectionView setDataSource:self];
+    
+    [self registerNibsForCollectionView:collectionView];
     
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }

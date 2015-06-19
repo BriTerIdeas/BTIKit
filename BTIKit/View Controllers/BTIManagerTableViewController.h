@@ -17,9 +17,7 @@
 
 // Forward Declarations and Classes
 #import "BTITableViewController.h"
-@class BTITableContentsManager;
-@class BTITableSectionInfo;
-@class BTITableRowInfo;
+#import "BTITableContentsManager.h"
 
 // Public Constants
 

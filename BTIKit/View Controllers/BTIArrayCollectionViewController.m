@@ -7,10 +7,16 @@
 
 #import "BTIArrayCollectionViewController.h"
 
-// Models and other global
+// Libraries
+
+// Other Global
 #import "BTIMacros.h"
 
-// Sub-controllers
+// Categories
+
+// Models
+
+// View Controllers
 
 // Views
 
