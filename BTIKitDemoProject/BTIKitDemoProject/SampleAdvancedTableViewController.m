@@ -13,6 +13,7 @@
 // Other Global
 #import "Constants.h"
 #import "BTIMacros.h"
+#import "BTIAlertManager.h"
 
 // Categories
 #import "NSNotificationCenter+BTIKitAdditions.h"
@@ -89,7 +90,7 @@
 - (void)populateContents
 {
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-    
+        
     // It looks busy, but at least everything is right here.  Otherwise this content would be spread over several methods.  The concept avoids a whole mess of if/else statements in cellForRow, and titleForHeader, and titleForFooter, and didSelectRow, and...
     // This is a contrived example, but the intention is that each block could do something considerably different.  Some could push on a navigation controller, some could present modally, etc.
     
@@ -117,12 +118,11 @@
         [rowInfo setRowHeight:standardRowHeight];
         [rowInfo setRowSelectionBlock:^{
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                            message:@"I've got the same combination on my luggage!"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"That's amazing!"
-                                                  otherButtonTitles:nil];
-            [alert show];
+            BTIAlertOperation *alertOperation = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+            [alertOperation setTitle:@"That's amazing!"];
+            [alertOperation setMessage:@"I've got the same combination on my luggage!"];
+            
+            [[BTIAlertManager sharedManager] addAlertOperation:alertOperation];
             
         }];
         
@@ -136,12 +136,11 @@
         [rowInfo setRowHeight:bonusRowHeight];
         [rowInfo setRowSelectionBlock:^{
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                            message:@"Funny. She doesn't look Druish."
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"Try to save the car..."
-                                                  otherButtonTitles:nil];
-            [alert show];
+            BTIAlertOperation *alertOperation = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+            [alertOperation setTitle:@"Funny. She doesn't look Druish."];
+            [alertOperation setMessage:@"Try to save the car..."];
+            
+            [[BTIAlertManager sharedManager] addAlertOperation:alertOperation];
             
         }];
         
@@ -153,13 +152,12 @@
         [rowInfo setRowHeight:standardRowHeight];
         [rowInfo setRowSelectionBlock:^{
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                            message:@"My brains are going into my feet!"
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"What have I done?!"
-                                                  otherButtonTitles:nil];
-            [alert show];
+            BTIAlertOperation *alertOperation = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+            [alertOperation setTitle:@"What have I done?!"];
+            [alertOperation setMessage:@"My brains are going into my feet!"];
             
+            [[BTIAlertManager sharedManager] addAlertOperation:alertOperation];
+
         }];
         
     }}
@@ -190,12 +188,11 @@
         [rowInfo setRowHeight:bonusRowHeight];
         [rowInfo setRowAccessorySelectionBlock:^{
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
-                                                            message:@"Necktie... Neckturn... Nickel..."
-                                                           delegate:nil
-                                                  cancelButtonTitle:@"It's an \"N\" word"
-                                                  otherButtonTitles:nil];
-            [alert show];
+            BTIAlertOperation *alertOperation = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+            [alertOperation setTitle:@"It's an \"N\" word"];
+            [alertOperation setMessage:@"Necktie... Neckturn... Nickel..."];
+            
+            [[BTIAlertManager sharedManager] addAlertOperation:alertOperation];
 
         }];
         
@@ -221,12 +218,10 @@
     [super populateNotificationInfos];
 
     [self addLifetimeNotificationInfoForName:BTILifetimeNotification
-                                    selector:@selector(doSomethingForLifetimeNotification:)
-                                      object:nil];
+                                    selector:@selector(doSomethingForLifetimeNotification:)];
     
     [self addVisibleNotificationInfoForName:BTIVisibleNotification
-                                   selector:@selector(doSomethingForVisibleNotification:)
-                                     object:nil];
+                                   selector:@selector(doSomethingForVisibleNotification:)];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -258,12 +253,11 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
-                                                    message:@"Received *visible* notification"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    BTIAlertOperation *alert = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+    [alert setTitle:[NSString stringWithFormat:@"Tab at index %ld", (long)index]];
+    [alert setMessage:@"Received *visible* notification"];
+    
+    [[BTIAlertManager sharedManager] addAlertOperation:alert];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -275,12 +269,11 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
-                                                    message:@"Received *lifetime* notification"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    BTIAlertOperation *alert = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+    [alert setTitle:[NSString stringWithFormat:@"Tab at index %ld", (long)index]];
+    [alert setMessage:@"Received *lifetime* notification"];
+    
+    [[BTIAlertManager sharedManager] addAlertOperation:alert];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }

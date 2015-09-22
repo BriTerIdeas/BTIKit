@@ -29,6 +29,9 @@
 		363F8E2A18EDF39900AA9218 /* SampleAdvancedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8E2818EDF39900AA9218 /* SampleAdvancedTableViewController.m */; };
 		363F8E2C18EDF39900AA9218 /* SampleAdvancedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363F8E2918EDF39900AA9218 /* SampleAdvancedTableViewController.xib */; };
 		363F8E2D18EDF39900AA9218 /* SampleAdvancedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363F8E2918EDF39900AA9218 /* SampleAdvancedTableViewController.xib */; };
+		3651BC521BB1855900CB2E63 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3651BC511BB1855900CB2E63 /* Launch Screen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		3651BC551BB1C92900CB2E63 /* BTIAlertOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651BC541BB1C92900CB2E63 /* BTIAlertOperation.m */; settings = {ASSET_TAGS = (); }; };
+		3651BC591BB1D1F300CB2E63 /* BTIAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3651BC581BB1D1F300CB2E63 /* BTIAlertManager.m */; settings = {ASSET_TAGS = (); }; };
 		36544ED718F32E1E00B9B7A2 /* SampleTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = 36544ED518F32E1E00B9B7A2 /* SampleTableViewCell1.m */; };
 		36544ED918F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */; };
 		3655D773199E6810003390D3 /* NSNull+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655D772199E6810003390D3 /* NSNull+BTIKitAdditions.m */; };
@@ -133,6 +136,11 @@
 		363F8E2718EDF39900AA9218 /* SampleAdvancedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleAdvancedTableViewController.h; sourceTree = "<group>"; };
 		363F8E2818EDF39900AA9218 /* SampleAdvancedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleAdvancedTableViewController.m; sourceTree = "<group>"; };
 		363F8E2918EDF39900AA9218 /* SampleAdvancedTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleAdvancedTableViewController.xib; sourceTree = "<group>"; };
+		3651BC511BB1855900CB2E63 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3651BC531BB1C92900CB2E63 /* BTIAlertOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTIAlertOperation.h; path = Operations/BTIAlertOperation.h; sourceTree = "<group>"; };
+		3651BC541BB1C92900CB2E63 /* BTIAlertOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTIAlertOperation.m; path = Operations/BTIAlertOperation.m; sourceTree = "<group>"; };
+		3651BC571BB1D1F300CB2E63 /* BTIAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTIAlertManager.h; path = Managers/BTIAlertManager.h; sourceTree = "<group>"; };
+		3651BC581BB1D1F300CB2E63 /* BTIAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTIAlertManager.m; path = Managers/BTIAlertManager.m; sourceTree = "<group>"; };
 		36544ED418F32E1E00B9B7A2 /* SampleTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCell1.h; sourceTree = "<group>"; };
 		36544ED518F32E1E00B9B7A2 /* SampleTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCell1.m; sourceTree = "<group>"; };
 		36544ED618F32E1E00B9B7A2 /* SampleTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell1.xib; sourceTree = "<group>"; };
@@ -299,6 +307,24 @@
 			name = "View Controller Tests";
 			sourceTree = "<group>";
 		};
+		3651BC561BB1C93200CB2E63 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				3651BC531BB1C92900CB2E63 /* BTIAlertOperation.h */,
+				3651BC541BB1C92900CB2E63 /* BTIAlertOperation.m */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		3651BC5A1BB1D1F800CB2E63 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3651BC571BB1D1F300CB2E63 /* BTIAlertManager.h */,
+				3651BC581BB1D1F300CB2E63 /* BTIAlertManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		36544ED318F32DEE00B9B7A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +426,7 @@
 				363F8E0818EDD6A300AA9218 /* View Controllers */,
 				36544ED318F32DEE00B9B7A2 /* Views */,
 				366E0D9218E9E93C0006B900 /* Images.xcassets */,
+				3651BC511BB1855900CB2E63 /* Launch Screen.storyboard */,
 				366E0D7E18E9E93C0006B900 /* Supporting Files */,
 			);
 			path = BTIKitDemoProject;
@@ -445,6 +472,8 @@
 				3655D791199EEA39003390D3 /* Misc Helpers */,
 				366E0DB018E9E9680006B900 /* Categories */,
 				366E0DB118E9E9680006B900 /* Models */,
+				3651BC5A1BB1D1F800CB2E63 /* Managers */,
+				3651BC561BB1C93200CB2E63 /* Operations */,
 				366E0DB218E9E9680006B900 /* View Controllers */,
 				366E0DB318E9E9680006B900 /* Views */,
 			);
@@ -587,7 +616,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BTI;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "BriTer Ideas LLC";
 				TargetAttributes = {
 					366E0D9718E9E93C0006B900 = {
@@ -625,6 +654,7 @@
 				366E0D8218E9E93C0006B900 /* InfoPlist.strings in Resources */,
 				3655D79C199FB434003390D3 /* SampleWebViewController.xib in Resources */,
 				363F8E2518EDF37500AA9218 /* SampleBasicTableViewController.xib in Resources */,
+				3651BC521BB1855900CB2E63 /* Launch Screen.storyboard in Resources */,
 				3655D7A6199FD40B003390D3 /* SampleTableHeaderFooterView.xib in Resources */,
 				36544ED918F32E1E00B9B7A2 /* SampleTableViewCell1.xib in Resources */,
 				363F8E2C18EDF39900AA9218 /* SampleAdvancedTableViewController.xib in Resources */,
@@ -654,6 +684,7 @@
 			files = (
 				3655D784199E9CB1003390D3 /* BTICollectionViewCell.m in Sources */,
 				3655D79F199FB874003390D3 /* NSArray+BTIKitAdditions.m in Sources */,
+				3651BC591BB1D1F300CB2E63 /* BTIAlertManager.m in Sources */,
 				36CAEE6018EA5295004903BA /* NSNotificationCenter+BTIKitAdditions.m in Sources */,
 				3655D7AB199FD611003390D3 /* SampleCollectionViewCell1.m in Sources */,
 				36CAEE5618EA4C5C004903BA /* BTITableSectionInfo.m in Sources */,
@@ -661,6 +692,7 @@
 				36CAEE6118EA5295004903BA /* UIDevice+BTIKitAdditions.m in Sources */,
 				3655D789199EDFF3003390D3 /* BTICollectionViewController.m in Sources */,
 				361EE9F018F6F65100ED8FE8 /* SampleDetailViewController.m in Sources */,
+				3651BC551BB1C92900CB2E63 /* BTIAlertOperation.m in Sources */,
 				36804A131AB1E186000F6AE6 /* UIView+BTIKitAdditions.m in Sources */,
 				36A0E96E18EF482000907AA1 /* UITableViewCell+BTIKitAdditions.m in Sources */,
 				3655D781199E9C9C003390D3 /* BTITableViewHeaderFooterView.m in Sources */,
@@ -772,6 +804,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -786,7 +819,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -819,7 +852,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -834,6 +867,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProject/BTIKitDemoProject-Info.plist";
 				OTHER_CFLAGS = "-Wdocumentation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briterideas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = BTIKitDemoProject;
 				WRAPPER_EXTENSION = app;
 			};
@@ -848,6 +882,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProject/BTIKitDemoProject-Info.plist";
 				OTHER_CFLAGS = "-Wdocumentation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briterideas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = BTIKitDemoProject;
 				WRAPPER_EXTENSION = app;
 			};
@@ -869,6 +904,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "BTIKitDemoProjectTests/BTIKitDemoProjectTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briterideas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = BTIKitDemoProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -887,6 +923,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProjectTests/BTIKitDemoProjectTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briterideas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = BTIKitDemoProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -911,6 +948,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -926,7 +964,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -941,6 +979,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProject/BTIKitDemoProject-Info.plist";
 				OTHER_CFLAGS = "-Wdocumentation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briterideas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = BTIKitDemoProject;
 				WRAPPER_EXTENSION = app;
 			};
@@ -962,6 +1001,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "BTIKitDemoProjectTests/BTIKitDemoProjectTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.briterideas.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = BTIKitDemoProjectTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

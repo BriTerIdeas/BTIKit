@@ -13,6 +13,7 @@
 // Other Global
 #import "Constants.h"
 #import "BTIMacros.h"
+#import "BTIAlertManager.h"
 
 // Categories
 #import "NSNotificationCenter+BTIKitAdditions.h"
@@ -65,6 +66,17 @@
 
 #pragma mark - UIViewController Overrides
 
+- (void)viewDidLoad
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    [super viewDidLoad];
+    
+    [self setSearchInterfaceVisible:YES];
+
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
@@ -115,12 +127,10 @@
     [super populateNotificationInfos];
 
     [self addLifetimeNotificationInfoForName:BTILifetimeNotification
-                                    selector:@selector(doSomethingForLifetimeNotification:)
-                                      object:nil];
+                                    selector:@selector(doSomethingForLifetimeNotification:)];
     
     [self addVisibleNotificationInfoForName:BTIVisibleNotification
-                                   selector:@selector(doSomethingForVisibleNotification:)
-                                     object:nil];
+                                   selector:@selector(doSomethingForVisibleNotification:)];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -139,6 +149,25 @@
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 
+- (void)handleSearchForTerm:(NSString *)searchTerm
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    [super handleSearchForTerm:searchTerm];
+    
+    [[self searchContents] removeAllObjects];
+    
+    for (NSString *string in [self mainContents])
+    {
+        if ([string rangeOfString:searchTerm options:NSCaseInsensitiveSearch].location != NSNotFound)
+        {
+            [[self searchContents] addObject:string];
+        }
+    }
+
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+}
+
 #pragma mark - Notification Handlers
 
 - (void)doSomethingForVisibleNotification:(NSNotification *)notification
@@ -148,12 +177,11 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
-                                                    message:@"Received *visible* notification"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    BTIAlertOperation *alert = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+    [alert setTitle:[NSString stringWithFormat:@"Tab at index %ld", (long)index]];
+    [alert setMessage:@"Received *visible* notification"];
+    
+    [[BTIAlertManager sharedManager] addAlertOperation:alert];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -165,13 +193,12 @@
     NSArray *viewControllers = [[self tabBarController] viewControllers];
     NSInteger index = [viewControllers indexOfObject:self];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
-                                                    message:@"Received *lifetime* notification"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    BTIAlertOperation *alert = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+    [alert setTitle:[NSString stringWithFormat:@"Tab at index %ld", (long)index]];
+    [alert setMessage:@"Received *lifetime* notification"];
     
+    [[BTIAlertManager sharedManager] addAlertOperation:alert];
+
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 

@@ -13,6 +13,7 @@
 // Other Global
 #import "Constants.h"
 #import "BTIMacros.h"
+#import "BTIAlertManager.h"
 
 // Categories
 #import "NSNotificationCenter+BTIKitAdditions.h"
@@ -102,15 +103,13 @@
 {
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
-    NSArray *viewControllers = [[self tabBarController] viewControllers];
-    NSInteger index = [viewControllers indexOfObject:[self navigationController]];
+    NSInteger index = [self currentTabBarControllerIndex];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
-                                                    message:@"Received *visible* notification"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    BTIAlertOperation *alert = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+    [alert setTitle:[NSString stringWithFormat:@"Tab at index %ld", (long)index]];
+    [alert setMessage:@"Received *visible* notification"];
+    
+    [[BTIAlertManager sharedManager] addAlertOperation:alert];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -119,15 +118,13 @@
 {
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
-    NSArray *viewControllers = [[self tabBarController] viewControllers];
-    NSInteger index = [viewControllers indexOfObject:[self navigationController]];
+    NSInteger index = [self currentTabBarControllerIndex];
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"Tab at index %ld\n", (long)index]
-                                                    message:@"Received *lifetime* notification"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    BTIAlertOperation *alert = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+    [alert setTitle:[NSString stringWithFormat:@"Tab at index %ld", (long)index]];
+    [alert setMessage:@"Received *lifetime* notification"];
+    
+    [[BTIAlertManager sharedManager] addAlertOperation:alert];
     
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
@@ -177,5 +174,34 @@
 }
 
 #pragma mark - Misc Methods
+
+- (NSInteger)currentTabBarControllerIndex
+{
+    BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
+
+    NSArray *viewControllers = [[self tabBarController] viewControllers];
+    NSInteger index = [viewControllers indexOfObject:self];
+    
+    if (index == NSNotFound)
+    {
+        index = 0;
+        for (UIViewController *viewController in viewControllers)
+        {
+            if ([viewController isKindOfClass:[UINavigationController class]])
+            {
+                UINavigationController *navigationController = (UINavigationController *)viewController;
+                
+                if ([[navigationController viewControllers] containsObject:self])
+                {
+                    break;
+                }
+            }
+            index++;
+        }
+    }
+    
+    BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
+    return index;
+}
 
 @end

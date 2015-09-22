@@ -1,6 +1,6 @@
 //
 //  BTIKit -- [https://github.com/BriTerIdeas/BTIKit]
-//  v1.4
+//  v1.5
 //
 //  Created by Brian Slick. Copyright (c) 2015 BriTer Ideas LLC. All rights reserved.
 //
@@ -86,15 +86,15 @@
 
     BTITableContentsManager *manager = nil;
     
-    if (tableView == [self tableView])
-    {
-        manager = [self mainContentsManager];
-    }
-    else if (tableView == [[self searchDisplayController] searchResultsTableView])
+    if ([[self searchController] isActive])
     {
         manager = [self searchContentsManager];
     }
-    
+    else
+    {
+        manager = [self mainContentsManager];
+    }
+        
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
     return manager;
 }

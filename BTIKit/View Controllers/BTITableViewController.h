@@ -1,6 +1,6 @@
 //
 //  BTIKit -- [https://github.com/BriTerIdeas/BTIKit]
-//  v1.4
+//  v1.5
 //
 //  Created by Brian Slick. Copyright (c) 2015 BriTer Ideas LLC. All rights reserved.
 //
@@ -13,7 +13,7 @@
  
  This class is intended to be used with a XIB file containing a UITableView, however if the IBOutlet has not been populated by the time viewWillAppear is called, a full-screen, plain table view will be created.
  
- This class implements the minimum setup necessary to support a UISearchDisplayController.  Subclasses must override the handleSearchForTerm: method in order to implement the actual search logic that this class does not provide.
+ This class implements the minimum setup necessary to support a UISearchController.  Subclasses must override the handleSearchForTerm: method in order to implement the actual search logic that this class does not provide.
  
  The selectionSet is provided to handle cases where multiple selections (ex: checkmarks) would be useful, and the selectedObject is for single selection.  This class does not implement any logic utilizing these properties, merely makes them available.
  
@@ -30,7 +30,7 @@
 
 // Protocols
 
-@interface BTITableViewController : BTIViewController <UITableViewDelegate, UITableViewDataSource, UISearchDisplayDelegate, UISearchBarDelegate>
+@interface BTITableViewController : BTIViewController <UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating>
 
 #pragma mark - IBOutlet Properties
 
@@ -38,6 +38,9 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 #pragma mark - Other Public Properties
+
+/// Default search controller
+@property (nonatomic, strong, readonly) UISearchController *searchController;
 
 /// A collection of "selected" objects. This is not automatically used anywhere, merely provided for convenience. Can be used with checkmarks. Items in the set are "selected", all others are not, etc.
 @property (nonatomic, strong, readonly) NSMutableSet *selectionSet;
@@ -73,5 +76,11 @@
  */
 - (void)registerNibsForTableView:(UITableView *)tableView;
 
+/**
+ This method will add (or remove) the search bar belonging to \em searchController to the table view's header view. The search bar is not shown by default.
+ 
+ @param isVisible YES to show the search bar, NO to remove it.
+ */
+- (void)setSearchInterfaceVisible:(BOOL)isVisible;
 
 @end

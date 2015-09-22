@@ -12,6 +12,7 @@
 
 // Other Global
 #import "BTIMacros.h"
+#import "BTIAlertManager.h"
 
 // Categories
 #import "NSNotificationCenter+BTIKitAdditions.h"
@@ -76,12 +77,11 @@
                                      object:nil
                                  usingBlock:^(NSNotification *notification) {
                                      
-                                     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Block Notification"
-                                                                                     message:@"Received"
-                                                                                    delegate:nil
-                                                                           cancelButtonTitle:@"Ok"
-                                                                           otherButtonTitles:nil];
-                                     [alert show];
+                                     BTIAlertOperation *alertOperation = [[BTIAlertOperation alloc] initWithPresentationContext:nil];
+                                     [alertOperation setTitle:@"Block Notification"];
+                                     [alertOperation setMessage:@"Received"];
+                                     
+                                     [[BTIAlertManager sharedManager] addAlertOperation:alertOperation];
                                      
                                  }];
     
