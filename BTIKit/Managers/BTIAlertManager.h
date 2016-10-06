@@ -38,13 +38,13 @@
 @interface BTIAlertManager : NSObject
 
 // Public Methods
-+ (instancetype)sharedManager;
++ (nonnull instancetype)sharedManager;
 
 /**
  Adds an alert operation to the queue. In the event that additional alerts are added before any preceding one is finished, they will remain in the queue and fire after the preceding one has finished
  
  @param alertOperation The operation to add to the queue
  */
-- (void)addAlertOperation:(BTIAlertOperation *)alertOperation;
+- (void)addAlertOperation:(nullable BTIAlertOperation *)alertOperation;
 
 @end

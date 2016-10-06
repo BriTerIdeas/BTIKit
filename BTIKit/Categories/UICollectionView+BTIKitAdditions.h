@@ -17,6 +17,6 @@
  
  @return An index path representing the row and section associated with \em view or nil.
  */
-- (NSIndexPath *)indexPathForItemContainingViewBTI:(UIView *)view;
+- (nullable NSIndexPath *)indexPathForItemContainingViewBTI:(nullable UIView *)view;
 
 @end

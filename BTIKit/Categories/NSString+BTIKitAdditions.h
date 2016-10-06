@@ -12,7 +12,7 @@
 
 /** Passes directly through to writeToURL:atomically:encoding:error:
  */
-- (BOOL)writeToURLBTI:(NSURL *)url atomically:(BOOL)useAuxiliaryFile encoding:(NSStringEncoding)enc;
+- (BOOL)writeToURLBTI:(nullable NSURL *)url atomically:(BOOL)useAuxiliaryFile encoding:(NSStringEncoding)enc;
 
 /**
  Returns whether the receiver is empty

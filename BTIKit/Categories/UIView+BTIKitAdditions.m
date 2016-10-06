@@ -20,7 +20,7 @@
 
 @implementation UIView (BTIKitAdditions)
 
-+ (instancetype)viewFromNibNameBTI:(NSString *)nibNameOrNil
++ (nullable instancetype)viewFromNibNameBTI:(nullable NSString *)nibNameOrNil
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
@@ -46,7 +46,7 @@
     return viewToReturn;
 }
 
-+ (instancetype)viewFromNibBTI;
++ (nullable instancetype)viewFromNibBTI;
 {
     return [[self class] viewFromNibNameBTI:NSStringFromClass([self class])];
 }

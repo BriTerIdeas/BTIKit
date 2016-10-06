@@ -21,7 +21,7 @@
 @interface BTIAlertManager ()
 
 // Private Properties
-@property (nonatomic, strong) NSOperationQueue *operationQueue;
+@property (nonnull, nonatomic, strong) NSOperationQueue *operationQueue;
 
 @end
 
@@ -29,7 +29,7 @@
 
 #pragma mark - Custom Getters and Setters
 
-- (NSOperationQueue *)operationQueue
+- (nonnull NSOperationQueue *)operationQueue
 {
     if (_operationQueue == nil)
     {
@@ -41,7 +41,7 @@
 
 #pragma mark - Misc Methods
 
-- (void)addAlertOperation:(BTIAlertOperation *)alertOperation
+- (void)addAlertOperation:(nullable BTIAlertOperation *)alertOperation
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
 
@@ -58,7 +58,7 @@
 
 #pragma mark - Singleton
 
-+ (instancetype)sharedManager
++ (nonnull instancetype)sharedManager
 {
     static dispatch_once_t predicate;
     static BTIAlertManager *shared = nil;

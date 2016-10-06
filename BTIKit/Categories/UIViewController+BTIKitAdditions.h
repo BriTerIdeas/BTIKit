@@ -15,6 +15,6 @@
  
  @param title The title that should appear in the back button
  */
-- (void)setBackBarButtonTitleBTI:(NSString *)title;
+- (void)setBackBarButtonTitleBTI:(nullable NSString *)title;
 
 @end

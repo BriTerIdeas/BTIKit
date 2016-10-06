@@ -35,21 +35,21 @@
 #pragma mark - IBOutlet Properties
 
 /// Returns the table view managed by this class. If it has not been supplied via IB or viewDidLoad, a plain table view will be created in viewDidLoad
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nullable, nonatomic, strong) IBOutlet UITableView *tableView;
 
 #pragma mark - Other Public Properties
 
 /// Default search controller
-@property (nonatomic, strong, readonly) UISearchController *searchController;
+@property (nullable, nonatomic, strong, readonly) UISearchController *searchController;
 
 /// A collection of "selected" objects. This is not automatically used anywhere, merely provided for convenience. Can be used with checkmarks. Items in the set are "selected", all others are not, etc.
-@property (nonatomic, strong, readonly) NSMutableSet *selectionSet;
+@property (nonnull, nonatomic, strong, readonly) NSMutableSet *selectionSet;
 
 /// A single "selected" object. This is not automatically used anywhere, merely provided for convenience. Can be used with checkmarks. This item is "selected", all others are not, etc.
-@property (nonatomic, strong) id selectedObject;
+@property (nullable, nonatomic, strong) id selectedObject;
 
 /// If the UISearchDisplayController, this will be populated with the search field text. Subclasses should use this combined with handleSearchForTerm: to filter contents.
-@property (nonatomic, copy) NSString *savedSearchTerm;
+@property (nullable, nonatomic, copy) NSString *savedSearchTerm;
 
 #pragma mark - Public Methods
 
@@ -58,7 +58,7 @@
  
  @param searchTerm String value for which to search
  */
-- (void)handleSearchForTerm:(NSString *)searchTerm NS_REQUIRES_SUPER;
+- (void)handleSearchForTerm:(nullable NSString *)searchTerm NS_REQUIRES_SUPER;
 
 /**
  This is a generic method to provide an object within table view datasource/delegate methods.  The standard implementation does nothing, as there is no data structure here.  Subclasses should override this method and return an appropriate object.  No need to call super.
@@ -66,7 +66,7 @@
  @param tableView The table view that is requesting data.
  @param indexPath The location in \em tableView to populate.
  */
-- (id)itemInTableView:(UITableView *)tableView atIndexPath:(NSIndexPath *)indexPath;    
+- (nullable id)itemInTableView:(nullable UITableView *)tableView atIndexPath:(nullable NSIndexPath *)indexPath;
 
 
 /**
@@ -74,7 +74,7 @@
  
  @param tableView The table view for which nibs should be registered.
  */
-- (void)registerNibsForTableView:(UITableView *)tableView;
+- (void)registerNibsForTableView:(nullable UITableView *)tableView;
 
 /**
  This method will add (or remove) the search bar belonging to \em searchController to the table view's header view. The search bar is not shown by default.

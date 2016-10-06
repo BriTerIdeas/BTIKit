@@ -40,10 +40,10 @@
 // Public Properties
 
 /// Text that will be shown in the alert's title field.
-@property (nonatomic, copy) NSString * _Nullable title;
+@property (nullable, nonatomic, copy) NSString *title;
 
 /// Text that will be shown in the alert's message field.
-@property (nonatomic, copy) NSString * _Nullable message;
+@property (nullable, nonatomic, copy) NSString *message;
 
 // Public Methods
 
@@ -52,7 +52,7 @@
  
  @param presentationContext The presenting view controller for the alert. If \em nil is provided, the application's main window root controller will be used
  */
-- (instancetype _Nonnull)initWithPresentationContext:(UIViewController * _Nullable)presentationContext;
+- (nonnull instancetype)initWithPresentationContext:(nullable UIViewController *)presentationContext;
 
 /**
  Adds a button to the alert. All parameters are passed straight through to UIAlertAction

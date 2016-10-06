@@ -17,13 +17,13 @@
  
  @return A UIView (or subclass) object, or nil.
  */
-+ (instancetype)viewFromNibNameBTI:(NSString *)nibNameOrNil;
++ (nullable instancetype)viewFromNibNameBTI:(nullable NSString *)nibNameOrNil;
 
 /**
  Returns a view loaded from a nib with name matching the class name.
  
  @return A UIView (or subclass) object, or nil.
  */
-+ (instancetype)viewFromNibBTI;
++ (nullable instancetype)viewFromNibBTI;
 
 @end

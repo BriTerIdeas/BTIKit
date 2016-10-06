@@ -11,6 +11,7 @@
 		361EE9F118F6F65100ED8FE8 /* SampleDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 361EE9EF18F6F65100ED8FE8 /* SampleDetailViewController.xib */; };
 		362F9D4A18F87BA00093C55F /* NSFileManager+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9D4918F87BA00093C55F /* NSFileManager+BTIKitAdditions.m */; };
 		362F9D4D18F87E980093C55F /* NSString+BTIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 362F9D4C18F87E980093C55F /* NSString+BTIKitAdditions.m */; };
+		362FFBE31DA2E19C00BDEC79 /* BTINSArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 362FFBE21DA2E19C00BDEC79 /* BTINSArrayTests.m */; };
 		363F8DFD18EC66E000AA9218 /* BTINSNotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8DFC18EC66E000AA9218 /* BTINSNotificationCenterTests.m */; };
 		363F8E0018ECABD600AA9218 /* BTINotificationInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8DFF18ECABD600AA9218 /* BTINotificationInfoTests.m */; };
 		363F8E0218ECEB6200AA9218 /* BTITableSectionInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 363F8E0118ECEB6200AA9218 /* BTITableSectionInfoTests.m */; };
@@ -114,6 +115,7 @@
 		362F9D4918F87BA00093C55F /* NSFileManager+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+BTIKitAdditions.m"; sourceTree = "<group>"; };
 		362F9D4B18F87E980093C55F /* NSString+BTIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BTIKitAdditions.h"; sourceTree = "<group>"; };
 		362F9D4C18F87E980093C55F /* NSString+BTIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BTIKitAdditions.m"; sourceTree = "<group>"; };
+		362FFBE21DA2E19C00BDEC79 /* BTINSArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINSArrayTests.m; sourceTree = "<group>"; };
 		363F8DFC18EC66E000AA9218 /* BTINSNotificationCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINSNotificationCenterTests.m; sourceTree = "<group>"; };
 		363F8DFF18ECABD600AA9218 /* BTINotificationInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTINotificationInfoTests.m; sourceTree = "<group>"; };
 		363F8E0118ECEB6200AA9218 /* BTITableSectionInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTITableSectionInfoTests.m; sourceTree = "<group>"; };
@@ -561,6 +563,7 @@
 		369A47D718EB843F00FF975B /* Category Tests */ = {
 			isa = PBXGroup;
 			children = (
+				362FFBE21DA2E19C00BDEC79 /* BTINSArrayTests.m */,
 				369A47D818EB846E00FF975B /* BTINSMutableArrayTests.m */,
 				363F8DFC18EC66E000AA9218 /* BTINSNotificationCenterTests.m */,
 				3655D774199E687D003390D3 /* BTINSStringTests.m */,
@@ -753,6 +756,7 @@
 				363F8E0218ECEB6200AA9218 /* BTITableSectionInfoTests.m in Sources */,
 				363F8E0018ECABD600AA9218 /* BTINotificationInfoTests.m in Sources */,
 				369A47C718EB571100FF975B /* BTITableRowInfoTests.m in Sources */,
+				362FFBE31DA2E19C00BDEC79 /* BTINSArrayTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,11 +910,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTIKitDemoProject.app/BTIKitDemoProject";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -929,11 +929,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTIKitDemoProject.app/BTIKitDemoProject";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "BTIKitDemoProjectTests/BTIKitDemoProjectTests-Info.plist";
@@ -1010,11 +1006,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTIKitDemoProject.app/BTIKitDemoProject";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (

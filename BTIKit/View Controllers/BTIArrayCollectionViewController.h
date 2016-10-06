@@ -27,6 +27,6 @@
 #pragma mark - Public Properties
 
 /// Container for data to display in the primary collection view.
-@property (nonatomic, strong, readonly) NSMutableArray *mainContents;
+@property (nonnull, nonatomic, strong, readonly) NSMutableArray *mainContents;
 
 @end

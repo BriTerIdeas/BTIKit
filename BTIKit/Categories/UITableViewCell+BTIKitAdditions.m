@@ -21,7 +21,7 @@
 
 @implementation UITableViewCell (BTIKitAdditions)
 
-- (UITableView *)enclosingTableViewBTI
+- (nullable UITableView *)enclosingTableViewBTI
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
@@ -41,12 +41,12 @@
     return tableView;
 }
 
-+ (instancetype)cellFromNibNameBTI:(NSString *)nibNameOrNil
++ (nullable instancetype)cellFromNibNameBTI:(nullable NSString *)nibNameOrNil
 {
     return [[self class] viewFromNibNameBTI:nibNameOrNil];
 }
 
-+ (instancetype)cellFromNibBTI;
++ (nullable instancetype)cellFromNibBTI;
 {
     return [[self class] cellFromNibNameBTI:NSStringFromClass([self class])];
 }

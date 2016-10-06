@@ -25,8 +25,8 @@
 @interface BTIArrayTableViewController ()
 
 // Private Properties
-@property (nonatomic, strong) NSMutableArray *mainContents;
-@property (nonatomic, strong) NSMutableArray *searchContents;
+@property (nonnull, nonatomic, strong) NSMutableArray *mainContents;
+@property (nonnull, nonatomic, strong) NSMutableArray *searchContents;
 
 @end
 
@@ -43,7 +43,7 @@
 
 #pragma mark - Custom Getters and Setters
 
-- (NSMutableArray *)mainContents
+- (nonnull NSMutableArray *)mainContents
 {
     if (_mainContents == nil)
     {
@@ -52,7 +52,7 @@
     return _mainContents;
 }
 
-- (NSMutableArray *)searchContents
+- (nonnull NSMutableArray *)searchContents
 {
     if (_searchContents == nil)
     {
@@ -69,8 +69,8 @@
 
 #pragma mark - BTITableViewController Overrides
 
-- (id)itemInTableView:(UITableView *)tableView
-          atIndexPath:(NSIndexPath *)indexPath
+- (nullable id)itemInTableView:(nullable UITableView *)tableView
+                   atIndexPath:(nullable NSIndexPath *)indexPath;
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
@@ -121,7 +121,7 @@
         // Main contents
         rows = [[self mainContents] count];
     }
-        
+    
     BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
     return rows;
 }
@@ -130,7 +130,7 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-
+    
     // Build Cell
     
     static NSString *blankCellIdentifier = @"blankCellIdentifier";

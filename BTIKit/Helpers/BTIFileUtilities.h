@@ -21,9 +21,9 @@
 // Public Methods
 
 // Directories
-+ (NSURL *)documentsDirectoryURL;
-+ (NSURL *)libraryDirectoryURL;
-+ (NSURL *)cacheDirectoryURL;
-+ (NSURL *)libraryApplicationSupportDirectoryURL;
++ (nullable NSURL *)documentsDirectoryURL;
++ (nullable NSURL *)libraryDirectoryURL;
++ (nullable NSURL *)cacheDirectoryURL;
++ (nullable NSURL *)libraryApplicationSupportDirectoryURL;
 
 @end

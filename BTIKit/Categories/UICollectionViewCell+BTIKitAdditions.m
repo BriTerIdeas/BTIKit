@@ -21,7 +21,7 @@
 
 @implementation UICollectionViewCell (BTIKitAdditions)
 
-- (UICollectionView *)enclosingCollectionViewBTI
+- (nullable UICollectionView *)enclosingCollectionViewBTI
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
@@ -41,12 +41,12 @@
     return collectionView;
 }
 
-+ (instancetype)cellFromNibNameBTI:(NSString *)nibNameOrNil
++ (nullable instancetype)cellFromNibNameBTI:(nullable NSString *)nibNameOrNil
 {
     return [[self class] viewFromNibNameBTI:nibNameOrNil];
 }
 
-+ (instancetype)cellFromNibBTI
++ (nullable instancetype)cellFromNibBTI
 {
     return [[self class] cellFromNibNameBTI:NSStringFromClass([self class])];
 }

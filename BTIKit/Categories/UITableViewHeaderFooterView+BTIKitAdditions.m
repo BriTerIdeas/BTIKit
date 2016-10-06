@@ -20,12 +20,12 @@
 
 @implementation UITableViewHeaderFooterView (BTIKitAdditions)
 
-+ (instancetype)headerFooterViewFromNibNameBTI:(NSString *)nibNameOrNil
++ (nullable instancetype)headerFooterViewFromNibNameBTI:(nullable NSString *)nibNameOrNil
 {
     return [[self class] viewFromNibNameBTI:nibNameOrNil];
 }
 
-+ (instancetype)headerFooterViewFromNibBTI
++ (nullable instancetype)headerFooterViewFromNibBTI
 {
     return [[self class] headerFooterViewFromNibNameBTI:NSStringFromClass([self class])];
 }

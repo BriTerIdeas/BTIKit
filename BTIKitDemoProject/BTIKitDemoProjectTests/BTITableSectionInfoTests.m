@@ -164,7 +164,7 @@
 - (void)testIndexOfObject
 {
     BTITableSectionInfo *sectionInfo = [self tableSectionInfo];
-    
+        
     XCTAssertEqual([sectionInfo indexOfRowsObject:@"Green"], 1, @"Wrong index");
 }
 

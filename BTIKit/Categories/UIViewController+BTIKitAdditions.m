@@ -20,7 +20,7 @@
 
 @implementation UIViewController (BTIKitAdditions)
 
-- (void)setBackBarButtonTitleBTI:(NSString *)title
+- (void)setBackBarButtonTitleBTI:(nullable NSString *)title
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
 

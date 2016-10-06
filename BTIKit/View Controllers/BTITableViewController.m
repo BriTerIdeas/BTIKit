@@ -25,8 +25,8 @@
 @interface BTITableViewController ()
 
 // Private Properties
-@property (nonatomic, strong) UISearchController *searchController;
-@property (nonatomic, strong) NSMutableSet *selectionSet;
+@property (nullable, nonatomic, strong) UISearchController *searchController;
+@property (nonnull, nonatomic, strong) NSMutableSet *selectionSet;
 
 @end
 
@@ -43,7 +43,7 @@
     
     [_tableView setDataSource:nil];
     [_tableView setDelegate:nil];
-        
+    
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 
@@ -52,7 +52,7 @@
 
 #pragma mark - Custom Getters and Setters
 
-- (NSMutableSet *)selectionSet
+- (nonnull NSMutableSet *)selectionSet
 {
     if (_selectionSet == nil)
     {
@@ -66,7 +66,7 @@
 - (void)viewDidLoad
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-
+    
     [super viewDidLoad];
     
     UITableView *tableView = [self tableView];
@@ -76,7 +76,7 @@
     [tableView setDataSource:self];
     
     [self registerNibsForTableView:tableView];
-
+    
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 
@@ -103,7 +103,7 @@
 
 #pragma mark - Misc Methods
 
-- (void)handleSearchForTerm:(NSString *)searchTerm
+- (void)handleSearchForTerm:(nullable NSString *)searchTerm
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
@@ -114,8 +114,8 @@
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 
-- (id)itemInTableView:(UITableView *)tableView
-          atIndexPath:(NSIndexPath *)indexPath
+- (nullable id)itemInTableView:(nullable UITableView *)tableView
+                   atIndexPath:(nullable NSIndexPath *)indexPath
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
@@ -123,22 +123,22 @@
     
     // Sample usage
     
-//    if ([[self searchController] isActive])
-//    {
-//        // Search contents
-//        object = <something from search array>;
-//    }
-//    else
-//    {
-//        // Main contents
-//        object = <something from primary array>;
-//    }
+    //    if ([[self searchController] isActive])
+    //    {
+    //        // Search contents
+    //        object = <something from search array>;
+    //    }
+    //    else
+    //    {
+    //        // Main contents
+    //        object = <something from primary array>;
+    //    }
     
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
     return object;
 }
 
-- (void)registerNibsForTableView:(UITableView *)tableView
+- (void)registerNibsForTableView:(nullable UITableView *)tableView
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
     
@@ -158,7 +158,7 @@
         
         [searchController setSearchResultsUpdater:self];
         [searchController setDimsBackgroundDuringPresentation:NO];
-
+        
         UISearchBar *searchBar = [searchController searchBar];
         [[self tableView] setTableHeaderView:searchBar];
         [searchBar sizeToFit];
@@ -205,13 +205,13 @@
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
-
+    
     NSString *searchString = [[searchController searchBar] text];
     
     [self handleSearchForTerm:searchString];
     
     [[self tableView] reloadData];
-
+    
     //BTITrackingLog(@"<<< Leaving  <%p> %s >>>", self, __PRETTY_FUNCTION__);
 }
 

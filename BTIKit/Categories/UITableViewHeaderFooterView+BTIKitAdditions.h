@@ -17,13 +17,13 @@
  
  @return A UITableViewHeaderFooterView (or subclass) object, or nil.
  */
-+ (instancetype)headerFooterViewFromNibNameBTI:(NSString *)nibNameOrNil;
++ (nullable instancetype)headerFooterViewFromNibNameBTI:(nullable NSString *)nibNameOrNil;
 
 /**
  Returns a view loaded from a nib with name matching the class name.
  
  @return A UITableViewHeaderFooterView (or subclass) object, or nil.
  */
-+ (instancetype)headerFooterViewFromNibBTI;
++ (nullable instancetype)headerFooterViewFromNibBTI;
 
 @end

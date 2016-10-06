@@ -10,6 +10,6 @@
 
 @interface NSArray (BTIKitAdditions)
 
-- (id)objectAtRandomIndexBTI;
+- (nullable id)objectAtRandomIndexBTI;
 
 @end

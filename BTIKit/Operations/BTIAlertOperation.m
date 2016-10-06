@@ -23,8 +23,8 @@ NSString *const BTIAlertOperationFinishedKey = @"isFinished";
 @interface BTIAlertOperation ()
 
 // Private Properties
-@property (nonatomic, strong) UIAlertController *alertController;
-@property (nonatomic, weak) UIViewController *presentationContext;
+@property (nonnull, nonatomic, strong) UIAlertController *alertController;
+@property (nullable, nonatomic, weak) UIViewController *presentationContext;
 
 @property (getter = isPrivateExecuting) BOOL privateExecuting;
 @property (getter = isPrivateFinished) BOOL privateFinished;
@@ -35,28 +35,28 @@ NSString *const BTIAlertOperationFinishedKey = @"isFinished";
 
 #pragma mark - Custom Getters and Setters
 
-- (NSString *)title
+- (nullable NSString *)title
 {
     return [[self alertController] title];
 }
 
-- (void)setTitle:(NSString *)title
+- (void)setTitle:(nullable NSString *)title
 {
     [[self alertController] setTitle:title];
     [self setName:title];
 }
 
-- (NSString *)message
+- (nullable NSString *)message
 {
     return [[self alertController] message];
 }
 
-- (void)setMessage:(NSString *)message
+- (void)setMessage:(nullable NSString *)message
 {
     [[self alertController] setMessage:message];
 }
 
-- (UIAlertController *)alertController
+- (nonnull UIAlertController *)alertController
 {
     if (_alertController == nil)
     {
@@ -67,7 +67,7 @@ NSString *const BTIAlertOperationFinishedKey = @"isFinished";
 
 #pragma mark - Initialization
 
-- (instancetype _Nonnull)initWithPresentationContext:(UIViewController * _Nullable)presentationContext
+- (nonnull instancetype)initWithPresentationContext:(nullable UIViewController *)presentationContext
 {
     //BTITrackingLog(@">>> Entering <%p> %s <<<", self, __PRETTY_FUNCTION__);
 
